@@ -179,6 +179,18 @@ body::before {
   transform: translateY(-3px);
 }
 
+html[lang="ar"] .nav-links a {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+html[lang="ar"] .hero-actions .btn-primary,
+html[lang="ar"] .hero-actions .btn-secondary {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
 /* ============================================
    5. LAYOUT
    ============================================ */
@@ -370,6 +382,27 @@ body::before {
   background: var(--gold-soft);
   border-radius: 50%;
   box-shadow: 0 0 12px var(--gold-soft);
+}
+
+.lang-btn {
+  border: 1px solid rgba(127,15,27,.2);
+  background: rgba(255,255,255,.75);
+  color: #5a1515;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-family: 'Cairo', 'Inter', sans-serif;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  color: var(--red-2);
+  border-color: rgba(225,38,52,.35);
+  background: rgba(225,38,52,.08);
 }
 
 .menu-btn {
@@ -1548,6 +1581,12 @@ body::before {
     z-index: 999;
     position: relative;
   }
+
+  .lang-btn {
+    margin-inline-start: auto;
+    font-size: 11px;
+    padding: 9px 12px;
+  }
   
   .menu-btn.active {
     background: var(--red-2);
@@ -1654,5 +1693,9 @@ body::before {
   
   .brand-logo {
     width: 44px;
+  }
+
+  .lang-btn {
+    padding: 8px 10px;
   }
 }
