@@ -3,7 +3,7 @@
  * Sidra Food Industries
  */
 
-(function() {
+(function () {
   'use strict';
 
   // ============================================
@@ -68,7 +68,6 @@
           ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Bread', 'Natural'],
           ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain'],
           ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
-          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
           ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
           ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
           ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
@@ -159,7 +158,6 @@
           ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | خبز شرائح', 'طبيعي'],
           ['ريو توست متعدد الحبوب', 'خبز توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | خبز توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب'],
           ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
-          ['ريو العائلة — باقة كرواسون الزبدة', 'كرواسون بالزبدة — 8 قطع في علبة شفافة أنيقة. Italian Taste بلمسة الزبدة الطبيعية.', '8 قطع | Italian Taste | Sidra | كرواسون بالزبدة', 'حجم عائلي — 8 قطع'],
           ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
           ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
           ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
@@ -285,17 +283,17 @@
       const p = card.querySelector('p');
       const tag = card.querySelector('.product-tag');
       const nutrition = card.querySelector('.product-nutrition');
-      
+
       if (h3 && t.products.cards[index]) h3.textContent = t.products.cards[index][0];
-      
+
       if (p && t.products.cards[index]) {
         const textNodes = Array.from(p.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
         if (textNodes.length > 0) {
           textNodes[0].textContent = t.products.cards[index][1];
         }
       }
-      
-      if (nutrition && t.products.cards[index]) nutrition.textContent = t.products.cards[index][2];  
+
+      if (nutrition && t.products.cards[index]) nutrition.textContent = t.products.cards[index][2];
       if (tag && t.products.cards[index]) tag.textContent = t.products.cards[index][3];
     });
 
@@ -381,7 +379,7 @@
   window.addEventListener('scroll', () => {
     // Navbar scroll effect
     navbar.classList.toggle('scrolled', window.scrollY > 50);
-    
+
     // Back to top button
     backToTop.classList.toggle('show', window.scrollY > 500);
 
@@ -476,11 +474,11 @@
   // Smooth Scroll for Anchor Links
   // ============================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       const target = document.querySelector(targetId);
-      
+
       if (target) {
         const offsetTop = target.offsetTop - 100;
         window.scrollTo({
@@ -501,13 +499,13 @@
     tab.addEventListener('click', () => {
       // Remove active class from all tabs
       productTabs.forEach(t => t.classList.remove('active'));
-      
+
       // Add active class to clicked tab
       tab.classList.add('active');
-      
+
       // Hide all panels
       productPanels.forEach(panel => panel.classList.remove('active'));
-      
+
       // Show target panel
       const targetPanelId = 'panel-' + tab.getAttribute('data-tab');
       const targetPanel = document.getElementById(targetPanelId);
@@ -524,12 +522,12 @@
     question.addEventListener('click', () => {
       const item = question.parentElement;
       const isActive = item.classList.contains('active');
-      
+
       // Close all other items
       document.querySelectorAll('.faq-item').forEach(faq => {
         faq.classList.remove('active');
       });
-      
+
       // Toggle current item
       if (!isActive) {
         item.classList.add('active');
@@ -543,10 +541,10 @@
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
+
       const submitBtn = contactForm.querySelector('.submit-btn');
       const originalText = submitBtn.innerHTML;
-      
+
       const activeContactText = translations[currentLanguage].contact;
 
       // Show loading state
@@ -561,7 +559,7 @@
       submitBtn.disabled = true;
 
       const formData = new FormData(contactForm);
-      
+
       try {
         const response = await fetch(contactForm.action, {
           method: 'POST',
@@ -584,7 +582,7 @@
       } finally {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-        
+
         // Hide status after 5 seconds
         setTimeout(() => {
           formStatus.className = 'form-status';
