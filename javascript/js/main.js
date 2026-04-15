@@ -24,6 +24,10 @@
 
   const translations = {
     en: {
+      brand: {
+        title: 'SIDRA FOOD INDUSTRIES',
+        subtitle: 'Quality . Trust . Continuity'
+      },
       nav: ['Home', 'About', 'Gallery', 'Products', 'FAQ', 'Contact'],
       heroEyebrow: 'Libyan Food Manufacturing',
       heroText: 'Quality you can trust, and taste that stays with you every day. A leading Libyan brand in bakery and premium food products.',
@@ -101,6 +105,10 @@
       }
     },
     ar: {
+      brand: {
+        title: 'شركة سيدرا للصناعات الغذائية',
+        subtitle: 'الجودة . الثقة . الاستمرارية'
+      },
       nav: ['الرئيسية', 'من نحن', 'المعرض', 'المنتجات', 'الأسئلة', 'تواصل'],
       heroEyebrow: 'الصناعات الغذائية الليبية',
       heroText: 'الجودة التي تثق بها، والطعم الذي يرافقك كل يوم. علامة تجارية ليبية رائدة في صناعة المخبوزات والمنتجات الغذائية المميزة.',
@@ -200,6 +208,8 @@
     });
 
     setTextIfExists('.eyebrow', t.heroEyebrow);
+    setTextIfExists('.logo', t.brand.title);
+    setTextIfExists('.logo-sub', t.brand.subtitle);
     setTextIfExists('.hero-copy p', t.heroText);
     setTextIfExists('.hero-actions .btn-primary', t.heroButtons[0]);
     setTextIfExists('.hero-actions .btn-secondary', t.heroButtons[1]);
@@ -297,12 +307,17 @@
     });
     const footerBrand = document.querySelector('.footer-brand p');
     if (footerBrand) footerBrand.textContent = t.footer.brand;
-    document.querySelectorAll('.footer-links:nth-of-type(1) a').forEach((item, index) => {
-      if (t.footer.links1[index]) item.textContent = t.footer.links1[index];
-    });
-    document.querySelectorAll('.footer-links:nth-of-type(2) a').forEach((item, index) => {
-      if (t.footer.links2[index]) item.textContent = t.footer.links2[index];
-    });
+    const footerLinksGroups = document.querySelectorAll('.footer .footer-links');
+    if (footerLinksGroups[0]) {
+      footerLinksGroups[0].querySelectorAll('a').forEach((item, index) => {
+        if (t.footer.links1[index]) item.textContent = t.footer.links1[index];
+      });
+    }
+    if (footerLinksGroups[1]) {
+      footerLinksGroups[1].querySelectorAll('a').forEach((item, index) => {
+        if (t.footer.links2[index]) item.textContent = t.footer.links2[index];
+      });
+    }
     const footerBottom = document.querySelectorAll('.footer-bottom div');
     if (footerBottom[0]) footerBottom[0].textContent = t.footer.bottom[0];
     if (footerBottom[1]) footerBottom[1].textContent = t.footer.bottom[1];

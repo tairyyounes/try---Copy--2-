@@ -184,6 +184,16 @@ html[lang="ar"] .nav-links a {
   font-weight: 700;
 }
 
+html[lang="ar"] .logo {
+  font-size: 14px;
+  letter-spacing: .12em;
+}
+
+html[lang="ar"] .logo-sub {
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
 html[lang="ar"] .hero-actions .btn-primary,
 html[lang="ar"] .hero-actions .btn-secondary {
   font-size: 15px;
@@ -308,7 +318,7 @@ html[lang="ar"] .hero-actions .btn-secondary {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  direction: ltr;
+  direction: inherit;
 }
 
 .brand-area {
@@ -349,7 +359,7 @@ html[lang="ar"] .hero-actions .btn-secondary {
   display: flex;
   align-items: center;
   gap: 8px;
-  direction: ltr;
+  direction: inherit;
 }
 
 .nav-links a {
@@ -606,7 +616,10 @@ html[lang="ar"] .hero-actions .btn-secondary {
 
 .marquee-content {
   display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
   animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
 .marquee-item {
@@ -615,6 +628,7 @@ html[lang="ar"] .hero-actions .btn-secondary {
   align-items: center;
   gap: 50px;
   padding: 0 50px;
+  white-space: nowrap;
   color: var(--gold-soft);
   font-size: 14px;
   letter-spacing: .3em;
@@ -1547,7 +1561,6 @@ html[lang="ar"] .hero-actions .btn-secondary {
 /* --- Mobile Large (860px) --- */
 @media (max-width: 860px) {
   .navbar-inner {
-    direction: rtl;
     align-items: center;
     gap: 12px;
   }
