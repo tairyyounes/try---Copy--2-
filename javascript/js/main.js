@@ -265,7 +265,7 @@
     setTextIfExists('#gallery .section-kicker', t.gallery.kicker);
     setTextIfExists('#gallery .section-head .en-title', t.gallery.title);
     setTextIfExists('#gallery .section-intro', t.gallery.intro);
-    document.querySelectorAll('#gallery .gallery-overlay span').forEach((item, index) => {
+    document.querySelectorAll('#gallery .gallery-label').forEach((item, index) => {
       if (t.gallery.labels[index]) item.textContent = t.gallery.labels[index];
     });
 
