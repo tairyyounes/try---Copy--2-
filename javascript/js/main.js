@@ -28,9 +28,10 @@
         title: 'SIDRA FOOD INDUSTRIES',
         subtitle: 'Quality . Trust . Continuity'
       },
+      heroTitle: 'SIDRA FOOD INDUSTRIES',
       nav: ['Home', 'About', 'Gallery', 'Products', 'FAQ', 'Contact'],
       heroEyebrow: 'Libyan Food Manufacturing',
-      heroText: 'Quality you can trust, and taste that stays with you every day. A leading Libyan brand in bakery and premium food products.',
+      heroText: 'Italian quality by Libyan hands — the quality you trust, the taste that stays with you every day, and a leading brand in bakery and premium food products.',
       heroButtons: ['Explore Products', 'Contact Us'],
       marquee: ['Quality Products', 'Fresh Daily', '100% Natural', 'Made in Libya', 'Trusted Brand'],
       stats: ['Years of Experience', 'Products', 'Happy Customers', 'Production'],
@@ -68,6 +69,7 @@
           ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Bread', 'Natural'],
           ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain'],
           ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
+          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
           ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
           ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
           ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
@@ -119,8 +121,9 @@
         subtitle: 'الجودة . الثقة . الاستمرارية'
       },
       nav: ['الرئيسية', 'من نحن', 'المعرض', 'المنتجات', 'الأسئلة', 'تواصل'],
+      heroTitle: 'شركة سيدرا للصناعات الغذائية',
       heroEyebrow: 'الصناعات الغذائية الليبية',
-      heroText: 'الجودة التي تثق بها، والطعم الذي يرافقك كل يوم. علامة تجارية ليبية رائدة في صناعة المخبوزات والمنتجات الغذائية المميزة.',
+      heroText: 'جودة إيطالية بأيادي ليبية، الجودة التي تثق بها… والطعم الذي يرافقك كل يوم، وعلامة تجارية رائدة في صناعة المخبوزات والمنتجات الغذائية المميزة.',
       heroButtons: ['استكشف المنتجات', 'تواصل معنا'],
       marquee: ['منتجات عالية الجودة', 'طازج يومياً', 'طبيعي 100%', 'صنع في ليبيا', 'علامة موثوقة'],
       stats: ['سنوات الخبرة', 'منتجات', 'عملاء سعداء', 'الإنتاج'],
@@ -228,6 +231,7 @@
     setTextIfExists('.eyebrow', t.heroEyebrow);
     setTextIfExists('.logo', t.brand.title);
     setTextIfExists('.logo-sub', t.brand.subtitle);
+    setTextIfExists('.hero-company-title', t.heroTitle);
     setTextIfExists('.hero-copy p', t.heroText);
     setTextIfExists('.hero-actions .btn-primary', t.heroButtons[0]);
     setTextIfExists('.hero-actions .btn-secondary', t.heroButtons[1]);
