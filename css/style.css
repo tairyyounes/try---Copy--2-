@@ -949,12 +949,96 @@ html[lang="ar"] .hero-actions .btn-secondary {
 }
 
 /* --- Products Section --- */
+
+/* ---- Category Tab Bar ---- */
+.product-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(127,15,27,.08);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.07);
+}
+
+.product-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: rgba(43,27,21,.55);
+  font-family: 'Cairo', 'Marcellus', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+  position: relative;
+  white-space: nowrap;
+}
+
+.product-tab svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.product-tab:hover {
+  color: var(--red-2);
+  background: rgba(225,38,52,.07);
+}
+
+.product-tab:hover svg {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+.product-tab.active {
+  background: linear-gradient(135deg, var(--red-2) 0%, var(--red) 100%);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(179,15,29,.35);
+  transform: translateY(-1px);
+}
+
+.product-tab.active svg {
+  color: rgba(255,255,255,.9);
+  transform: scale(1.1);
+}
+
+/* ---- Product Panels ---- */
+.product-panel {
+  display: none;
+  animation: panelFade 0.45s ease;
+}
+
+.product-panel.active {
+  display: block;
+}
+
+@keyframes panelFade {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Products Grid ---- */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 
+.products-grid--center {
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  justify-content: center;
+}
+
+/* ---- Product Card ---- */
 .product-card {
   background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.9));
   border: 1px solid rgba(127,15,27,.06);
@@ -989,9 +1073,9 @@ html[lang="ar"] .hero-actions .btn-secondary {
 
 .product-image {
   width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, rgba(225,38,52,.05), rgba(198,154,61,.05));
-  border-radius: 20px;
+  height: 220px;
+  background: linear-gradient(135deg, rgba(225,38,52,.04), rgba(198,154,61,.04));
+  border-radius: 18px;
   margin-bottom: 24px;
   display: flex;
   align-items: center;
@@ -1000,14 +1084,15 @@ html[lang="ar"] .hero-actions .btn-secondary {
 }
 
 .product-image img {
-  max-width: 90%;
-  max-height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  padding: 10px;
   transition: transform .5s ease;
 }
 
 .product-card:hover .product-image img {
-  transform: scale(1.1) rotate(-3deg);
+  transform: scale(1.08) rotate(-2deg);
 }
 
 .product-index {
@@ -1021,30 +1106,42 @@ html[lang="ar"] .hero-actions .btn-secondary {
 
 .product-card h3 {
   font-family: 'Cairo', sans-serif;
-  font-size: 26px;
+  font-size: 21px;
   color: #7f0f1b;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.4;
 }
 
 .product-card p {
   color: rgba(43,27,21,.65);
-  line-height: 2;
-  font-size: 14px;
+  line-height: 1.9;
+  font-size: 13.5px;
+}
+
+.product-nutrition {
+  font-size: 11.5px;
+  color: rgba(43,27,21,.45);
+  letter-spacing: .02em;
+  font-style: italic;
+  display: block;
+  margin-top: 6px;
 }
 
 .product-tag {
   display: inline-block;
-  padding: 6px 14px;
-  background: linear-gradient(135deg, rgba(225,38,52,.08), rgba(198,154,61,.06));
-  border-radius: 8px;
+  padding: 6px 15px;
+  background: linear-gradient(135deg, rgba(225,38,52,.09), rgba(198,154,61,.07));
+  border: 1px solid rgba(225,38,52,.12);
+  border-radius: 40px;
   font-size: 11px;
   color: var(--red-2);
   margin-top: 18px;
-  font-weight: 600;
-  letter-spacing: .05em;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
+
 
 /* --- FAQ Section --- */
 .faq-grid {

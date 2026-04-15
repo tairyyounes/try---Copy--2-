@@ -59,10 +59,20 @@
         kicker: 'Our Products',
         title: 'Product Line',
         intro: 'A variety of high-quality products for every Libyan family.',
+        tabs: ['Toast Buckets', 'Cake', 'Croissant Bucket', 'Single Croissant'],
         cards: [
-          ['Toast & Bread', 'Fresh daily essentials baked with care for every meal.', 'Best Seller'],
-          ['RIO Croissants', 'Crispy golden croissants with an irresistible taste, perfect for breakfast and snacks.', 'New'],
-          ['Family Packs', 'Economical packs designed to meet the needs of the whole family.', 'Family Size']
+          ['Rio Toast Milk', 'Milk toast — fresh soft slices perfect for any meal.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 59mg', 'Fresh & Tasty'],
+          ['Rio Toast White Bread', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
+          ['Rio Toast White Bread', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['Rio Toast Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 3%', 'Healthy Choice'],
+          ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Bread', 'Natural'],
+          ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain'],
+          ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
+          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
+          ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
+          ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
+          ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
+          ['Rio Mini — Croissant Chocolate', 'Mini chocolate croissant — small size with big taste. Perfect as a snack anytime.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Mini Size', 'Mini Chocolate']
         ]
       },
       faq: {
@@ -140,10 +150,20 @@
         kicker: 'منتجاتنا',
         title: 'خط المنتجات',
         intro: 'مجموعة متنوعة من المنتجات عالية الجودة تلبي احتياجات كل أسرة ليبية.',
+        tabs: ['توست', 'كيك', 'باقة الكرواسون', 'كرواسون مفرد'],
         cards: [
-          ['توست وخبز', 'منتجات يومية أساسية طازجة، مخبوزة بعناية لتكون مثالية لكل وجبة.', 'الأكثر مبيعاً'],
-          ['كرواسون RIO', 'كرواسون هش وذهبي بطعم لا يُقاوم، مثالي للفطور والسناكس.', 'جديد'],
-          ['عبوات العائلة', 'عبوات اقتصادية مصممة لتلبي احتياجات العائلة الكاملة.', 'حجم عائلي']
+          ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
+          ['ريو توست أبيض', 'خبز توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
+          ['ريو توست أبيض', 'خبز توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['ريو توست الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%', 'خيار صحي'],
+          ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | خبز شرائح', 'طبيعي'],
+          ['ريو توست متعدد الحبوب', 'خبز توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | خبز توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب'],
+          ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
+          ['ريو العائلة — باقة كرواسون الزبدة', 'كرواسون بالزبدة — 8 قطع في علبة شفافة أنيقة. Italian Taste بلمسة الزبدة الطبيعية.', '8 قطع | Italian Taste | Sidra | كرواسون بالزبدة', 'حجم عائلي — 8 قطع'],
+          ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
+          ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
+          ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
+          ['ريو ميني — كرواسون شوكولاتة', 'ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | ميني', 'ميني شوكولاتة']
         ]
       },
       faq: {
@@ -250,14 +270,33 @@
     setTextIfExists('#products .section-kicker', t.products.kicker);
     setTextIfExists('#products .section-head .en-title', t.products.title);
     setTextIfExists('#products .section-intro', t.products.intro);
+
+    // Update Product Tabs
+    document.querySelectorAll('.product-tab').forEach((tab, index) => {
+      const textNodes = Array.from(tab.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+      if (textNodes.length > 0 && t.products.tabs && t.products.tabs[index]) {
+        textNodes[textNodes.length - 1].textContent = ` ${t.products.tabs[index]} `;
+      }
+    });
+
     const productCards = document.querySelectorAll('#products .product-card');
     productCards.forEach((card, index) => {
       const h3 = card.querySelector('h3');
       const p = card.querySelector('p');
       const tag = card.querySelector('.product-tag');
+      const nutrition = card.querySelector('.product-nutrition');
+      
       if (h3 && t.products.cards[index]) h3.textContent = t.products.cards[index][0];
-      if (p && t.products.cards[index]) p.textContent = t.products.cards[index][1];
-      if (tag && t.products.cards[index]) tag.textContent = t.products.cards[index][2];
+      
+      if (p && t.products.cards[index]) {
+        const textNodes = Array.from(p.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+        if (textNodes.length > 0) {
+          textNodes[0].textContent = t.products.cards[index][1];
+        }
+      }
+      
+      if (nutrition && t.products.cards[index]) nutrition.textContent = t.products.cards[index][2];  
+      if (tag && t.products.cards[index]) tag.textContent = t.products.cards[index][3];
     });
 
     setTextIfExists('#faq .section-head .en-title', t.faq.title);
@@ -448,6 +487,32 @@
           top: offsetTop,
           behavior: 'smooth'
         });
+      }
+    });
+  });
+
+  // ============================================
+  // Product Tabs
+  // ============================================
+  const productTabs = document.querySelectorAll('.product-tab');
+  const productPanels = document.querySelectorAll('.product-panel');
+
+  productTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs
+      productTabs.forEach(t => t.classList.remove('active'));
+      
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      
+      // Hide all panels
+      productPanels.forEach(panel => panel.classList.remove('active'));
+      
+      // Show target panel
+      const targetPanelId = 'panel-' + tab.getAttribute('data-tab');
+      const targetPanel = document.getElementById(targetPanelId);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
       }
     });
   });
