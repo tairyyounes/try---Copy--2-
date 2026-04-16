@@ -451,9 +451,9 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
   
   .menu-btn {
     display: none;
-    border: 1px solid rgba(127,15,27,.15);
+    border: 1px solid rgba(225,38,52,.3);
     background: rgba(127,15,27,.05);
-    color: #7f0f1b;
+    color: #c69a3d;
     width: 48px;
     height: 48px;
     border-radius: 14px;
