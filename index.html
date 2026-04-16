@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marcellus&family=Cairo:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marcellus&display=swap"
     rel="stylesheet">
 
   <!-- Main Stylesheet -->
@@ -53,8 +53,16 @@
   <header class="navbar" id="navbar">
     <div class="navbar-inner">
 
-      <!-- Brand Logo -->
-      <div class="brand-area">
+      
+      
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+
+        <!-- Brand Logo -->
+         <div class="brand-area">
         <img src="images/rio-logo.png" alt="RIO Logo" class="brand-logo">
         <div class="logo-wrap">
           <div class="logo">SIDRA FOOD INDUSTRIES</div>
@@ -62,12 +70,8 @@
         </div>
       </div>
 
-      <!-- Navigation Links -->
-      <nav class="nav-links" id="navLinks">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#products">Products</a>
+      
+        <a href="products.html">Products</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -98,14 +102,13 @@
     <div class="hero-grid reveal">
       <div class="hero-copy">
         <span class="eyebrow">Libyan Food Manufacturing</span>
-        <h1 class="en-title hero-company-title">SIDRA FOOD INDUSTRIES</h1>
         <p>
           جودة إيطالية بأيادي ليبية، الجودة التي تثق بها… والطعم الذي يرافقك كل يوم، وعلامة تجارية رائدة في صناعة
           المخبوزات والمنتجات الغذائية المميزة.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#products">
+          <a class="btn btn-primary" href="products.html">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -369,203 +372,158 @@
         </p>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="product-tabs reveal">
-        <button class="product-tab active" data-tab="toast" id="tab-toast">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-            <rect x="2" y="3" width="20" height="18" rx="2" />
-            <path d="M8 12h8M8 8h8M8 16h4" />
-          </svg>
-          Toast Buckets
-        </button>
-        <button class="product-tab" data-tab="cake" id="tab-cake">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-            <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
-            <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2 1 2 1" />
-            <path d="M2 21h20" />
-            <path d="M7 8v2" />
-            <path d="M12 8v2" />
-            <path d="M17 8v2" />
-          </svg>
-          Cake
-        </button>
-        <button class="product-tab" data-tab="bucket" id="tab-bucket">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-            <path d="M3 7h18M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M3 7l2 13h14l2-13" />
-            <path d="M9 11v6m6-6v6" />
-          </svg>
-          Croissant Bucket
-        </button>
-        <button class="product-tab" data-tab="single" id="tab-single">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-            <path d="M3 11l4-7 4 7M7 4v16M17 4c0 0-2 2-2 5s2 7 2 7s2-4 2-7-2-5-2-5z" />
-          </svg>
-          Single Croissant
-        </button>
-      </div>
-
-      <!-- TOAST BUCKETS Panel -->
-      <div class="product-panel active" id="panel-toast">
-        <div class="products-grid reveal">
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_19-39-31.jpg" alt="Rio Toast Milk" loading="lazy">
-            </div>
-            <div class="product-index">01</div>
-            <h3>Rio Toast Milk</h3>
-            <p>توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.
-              <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg</span>
-            </p>
-            <span class="product-tag">Fresh &amp; Tasty</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-07.jpg" alt="Rio Toast White Blue" loading="lazy">
-            </div>
-            <div class="product-index">02</div>
-            <h3>Rio Toast White Bread</h3>
-            <p>خبز توست عادي — أبيض ناعم مثالي لكل الوجبات.
-              <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g</span>
-            </p>
-            <span class="product-tag">Best Seller</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-20.jpg" alt="Rio Toast White Teal" loading="lazy">
-            </div>
-            <div class="product-index">03</div>
-            <h3>Rio Toast White Bread</h3>
-            <p>خبز توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.
-              <br><span class="product-nutrition">طاقة: 284 kcal | Italian Taste | Sidra</span>
-            </p>
-            <span class="product-tag">Italian Taste</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-37.jpg" alt="Rio Toast Oats" loading="lazy">
-            </div>
-            <div class="product-index">04</div>
-            <h3>Rio Toast Oats</h3>
-            <p>توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.
-              <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%</span>
-            </p>
-            <span class="product-tag">Healthy Choice</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-50.jpg" alt="Rio Toast Barley" loading="lazy">
-            </div>
-            <div class="product-index">05</div>
-            <h3>Rio Toast Barley</h3>
-            <p>توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.
-              <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | Sliced Bread</span>
-            </p>
-            <span class="product-tag">Natural</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-56.jpg" alt="Rio Toast Multi-Grain" loading="lazy">
-            </div>
-            <div class="product-index">06</div>
-            <h3>Rio Toast Multi-Grain</h3>
-            <p>خبز توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.
-              <br><span class="product-nutrition">طاقة: 284 kcal | خبز توست متعدد الحبوب | Italian Taste</span>
-            </p>
-            <span class="product-tag">Multi-Grain</span>
-          </article>
-
+      <div class="products-swiper reveal">
+        <div class="products-swiper-controls">
+          <button class="products-swiper-btn" id="productsPrev" type="button" aria-label="Previous products">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="products-swiper-btn" id="productsNext" type="button" aria-label="Next products">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
-      </div>
 
-      <!-- CAKE Panel -->
-      <div class="product-panel" id="panel-cake">
-        <div class="products-grid reveal products-grid--center">
+        <div class="products-swiper-viewport">
+          <div class="products-swiper-track" id="productsSwiperTrack">
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_19-39-31.jpg" alt="Rio Toast Milk" loading="lazy">
+              </div>
+              <div class="product-index">01</div>
+              <h3>Rio Toast Milk</h3>
+              <p>توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.
+                <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg</span>
+              </p>
+              <span class="product-tag">Fresh &amp; Tasty</span>
+            </article>
 
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_19-39-13.jpg" alt="Rio Cake Pound Cake Vanilla"
-                loading="lazy">
-            </div>
-            <div class="product-index">01</div>
-            <h3>Rio Cake — Pound Cake Vanilla</h3>
-            <p>كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.
-              <br><span class="product-nutrition">طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste</span>
-            </p>
-            <span class="product-tag">Italian Taste</span>
-          </article>
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-07.jpg" alt="Rio Toast White Bread" loading="lazy">
+              </div>
+              <div class="product-index">02</div>
+              <h3>Rio Toast White Bread</h3>
+              <p>خبز توست عادي — أبيض ناعم مثالي لكل الوجبات.
+                <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g</span>
+              </p>
+              <span class="product-tag">Best Seller</span>
+            </article>
 
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_19-39-13.jpg" alt="Rio Cake Pound Cake Vanilla" loading="lazy">
+              </div>
+              <div class="product-index">03</div>
+              <h3>Rio Cake - Pound Cake Vanilla</h3>
+              <p>كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.
+                <br><span class="product-nutrition">طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste</span>
+              </p>
+              <span class="product-tag">Italian Taste</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-33-02.jpg" alt="Rio Family Croissant Bucket" loading="lazy">
+              </div>
+              <div class="product-index">04</div>
+              <h3>Rio Family - Croissant Bucket</h3>
+              <p>كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.
+                <br><span class="product-nutrition">8 pcs | Butter Croissant | كرواسون بالزبدة | Italian Taste</span>
+              </p>
+              <span class="product-tag">Family Pack - 8 pcs</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_19-39-06.jpg" alt="Rio ONE Croissant Chocolate" loading="lazy">
+              </div>
+              <div class="product-index">05</div>
+              <h3>Rio ONE - Croissant Chocolate</h3>
+              <p>كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.
+                <br><span class="product-nutrition">طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste</span>
+              </p>
+              <span class="product-tag">Chocolate</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-20.jpg" alt="Rio Toast White Bread Teal" loading="lazy">
+              </div>
+              <div class="product-index">06</div>
+              <h3>Rio Toast White Bread</h3>
+              <p>خبز توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.
+                <br><span class="product-nutrition">طاقة: 284 kcal | Italian Taste | Sidra</span>
+              </p>
+              <span class="product-tag">Italian Taste</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-37.jpg" alt="Rio Toast Oats" loading="lazy">
+              </div>
+              <div class="product-index">07</div>
+              <h3>Rio Toast Oats</h3>
+              <p>توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.
+                <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%</span>
+              </p>
+              <span class="product-tag">Healthy Choice</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-50.jpg" alt="Rio Toast Barley" loading="lazy">
+              </div>
+              <div class="product-index">08</div>
+              <h3>Rio Toast Barley</h3>
+              <p>توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.
+                <br><span class="product-nutrition">طاقة: 284 kcal | دهون: 1.69g | Sliced Bread</span>
+              </p>
+              <span class="product-tag">Natural</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-56.jpg" alt="Rio Toast Multi-Grain" loading="lazy">
+              </div>
+              <div class="product-index">09</div>
+              <h3>Rio Toast Multi-Grain</h3>
+              <p>خبز توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.
+                <br><span class="product-nutrition">طاقة: 284 kcal | خبز توست متعدد الحبوب | Italian Taste</span>
+              </p>
+              <span class="product-tag">Multi-Grain</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_19-39-08.jpg" alt="Rio Croissant Chocolate 45g" loading="lazy">
+              </div>
+              <div class="product-index">10</div>
+              <h3>Rio - Croissant Chocolate 45g</h3>
+              <p>كرواسون شوكولاتة فردي — قلب محشو بكريمة شوكولاتة داكنة لذيذة.
+                <br><span class="product-nutrition">45g | كرواسون شوكولاتة | Rio Sidra | No.1 Choice</span>
+              </p>
+              <span class="product-tag">Chocolate 45g</span>
+            </article>
+
+            <article class="product-card products-swiper-slide">
+              <div class="product-image">
+                <img src="images/RioImages/photo_2026-04-15_20-32-44.jpg" alt="Rio Mini Croissant Chocolate" loading="lazy">
+              </div>
+              <div class="product-index">11</div>
+              <h3>Rio Mini - Croissant Chocolate</h3>
+              <p>ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.
+                <br><span class="product-nutrition">طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Mini Size</span>
+              </p>
+              <span class="product-tag">Mini Chocolate</span>
+            </article>
+          </div>
         </div>
-      </div>
 
-      <!-- CROISSANT BUCKET Panel -->
-      <div class="product-panel" id="panel-bucket">
-        <div class="products-grid reveal products-grid--center">
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-33-02.jpg" alt="Rio Family Croissant Bucket Plain"
-                loading="lazy">
-            </div>
-            <div class="product-index">01</div>
-            <h3>Rio Family — Croissant Bucket</h3>
-            <p>كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.
-              <br><span class="product-nutrition">8 pcs | Butter Croissant | كرواسون بالزبدة | Italian Taste</span>
-            </p>
-            <span class="product-tag">Family Pack — 8 pcs</span>
-          </article>
-
-        </div>
-      </div>
-
-      <!-- SINGLE CROISSANT Panel -->
-      <div class="product-panel" id="panel-single">
-        <div class="products-grid reveal">
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_19-39-06.jpg" alt="Rio ONE Croissant Chocolate Large"
-                loading="lazy">
-            </div>
-            <div class="product-index">01</div>
-            <h3>Rio ONE — Croissant Chocolate</h3>
-            <p>كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.
-              <br><span class="product-nutrition">طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste</span>
-            </p>
-            <span class="product-tag">Chocolate</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_19-39-08.jpg" alt="Rio Croissant Chocolate 45g"
-                loading="lazy">
-            </div>
-            <div class="product-index">02</div>
-            <h3>Rio — Croissant Chocolate 45g</h3>
-            <p>كرواسون شوكولاتة فردي — قلب محشو بكريمة شوكولاتة داكنة لذيذة.
-              <br><span class="product-nutrition">45g | كرواسون شوكولاتة | Rio Sidra | No.1 Choice</span>
-            </p>
-            <span class="product-tag">Chocolate 45g</span>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="images/RioImages/photo_2026-04-15_20-32-44.jpg" alt="Rio Mini Croissant Chocolate"
-                loading="lazy">
-            </div>
-            <div class="product-index">03</div>
-            <h3>Rio Mini — Croissant Chocolate</h3>
-            <p>ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.
-              <br><span class="product-nutrition">طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Mini Size</span>
-            </p>
-            <span class="product-tag">Mini Chocolate</span>
-          </article>
-
+        <div class="products-read-more">
+          <a class="btn btn-primary" href="products.html">Read More</a>
         </div>
       </div>
 

@@ -112,7 +112,8 @@
       misc: {
         backToTop: 'Back to top',
         menu: 'Toggle Menu',
-        langButton: 'English | العربية'
+        langButton: 'English | العربية',
+        readMore: 'Read More'
       }
     },
     ar: {
@@ -121,7 +122,6 @@
         subtitle: 'الجودة . الثقة . الاستمرارية'
       },
       nav: ['الرئيسية', 'من نحن', 'المعرض', 'المنتجات', 'الأسئلة', 'تواصل'],
-      heroTitle: 'شركة سيدرا للصناعات الغذائية',
       heroEyebrow: 'الصناعات الغذائية الليبية',
       heroText: 'جودة إيطالية بأيادي ليبية، الجودة التي تثق بها… والطعم الذي يرافقك كل يوم، وعلامة تجارية رائدة في صناعة المخبوزات والمنتجات الغذائية المميزة.',
       heroButtons: ['استكشف المنتجات', 'تواصل معنا'],
@@ -152,7 +152,7 @@
         kicker: 'منتجاتنا',
         title: 'خط المنتجات',
         intro: 'مجموعة متنوعة من المنتجات عالية الجودة تلبي احتياجات كل أسرة ليبية.',
-        tabs: ['توست', 'كيك', 'باقة الكرواسون', 'كرواسون مفرد'],
+        tabs: ['ريو توست عائلي', 'ريو كيك', 'باقة الكرواسون', 'كرواسون مفرد'],
         cards: [
           ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
           ['ريو توست أبيض', 'خبز توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
@@ -203,7 +203,8 @@
       misc: {
         backToTop: 'العودة للأعلى',
         menu: 'فتح/إغلاق القائمة',
-        langButton: 'English | العربية'
+        langButton: 'English | العربية',
+        readMore: 'اقرأ المزيد'
       }
     }
   };
@@ -366,6 +367,7 @@
     if (backToTop) backToTop.setAttribute('aria-label', t.misc.backToTop);
     if (menuBtn) menuBtn.setAttribute('aria-label', t.misc.menu);
     if (langBtn) langBtn.textContent = t.misc.langButton;
+    setTextIfExists('.products-read-more .btn', t.misc.readMore);
   }
 
   // ============================================
@@ -498,6 +500,9 @@
   // ============================================
   const productTabs = document.querySelectorAll('.product-tab');
   const productPanels = document.querySelectorAll('.product-panel');
+  const productsSwiperTrack = document.getElementById('productsSwiperTrack');
+  const productsPrev = document.getElementById('productsPrev');
+  const productsNext = document.getElementById('productsNext');
 
   productTabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -518,6 +523,52 @@
       }
     });
   });
+
+  if (productsSwiperTrack && productsPrev && productsNext) {
+    let currentSlide = 0;
+    const isRTL = document.documentElement.dir === 'rtl';
+
+    function getVisibleSlides() {
+      if (window.innerWidth <= 600) return 1;
+      if (window.innerWidth <= 1100) return 2;
+      return 3;
+    }
+
+    function updateProductsSwiper() {
+      const slides = productsSwiperTrack.querySelectorAll('.products-swiper-slide');
+      if (!slides.length) return;
+
+      const visibleSlides = getVisibleSlides();
+      const maxSlide = Math.max(0, slides.length - visibleSlides);
+      currentSlide = Math.min(currentSlide, maxSlide);
+
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      const trackStyles = window.getComputedStyle(productsSwiperTrack);
+      const gap = parseFloat(trackStyles.columnGap || trackStyles.gap || '0') || 0;
+      const offset = (slideWidth + gap) * currentSlide;
+      productsSwiperTrack.style.transform = isRTL
+        ? `translateX(${offset}px)`
+        : `translateX(-${offset}px)`;
+
+      productsPrev.disabled = currentSlide === 0;
+      productsNext.disabled = currentSlide >= maxSlide;
+    }
+
+    productsPrev.addEventListener('click', () => {
+      currentSlide = Math.max(0, currentSlide - 1);
+      updateProductsSwiper();
+    });
+
+    productsNext.addEventListener('click', () => {
+      const slides = productsSwiperTrack.querySelectorAll('.products-swiper-slide');
+      const maxSlide = Math.max(0, slides.length - getVisibleSlides());
+      currentSlide = Math.min(maxSlide, currentSlide + 1);
+      updateProductsSwiper();
+    });
+
+    window.addEventListener('resize', updateProductsSwiper);
+    updateProductsSwiper();
+  }
 
   // ============================================
   // FAQ Accordion
