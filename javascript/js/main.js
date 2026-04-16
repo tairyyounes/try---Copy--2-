@@ -204,7 +204,7 @@
         backToTop: 'العودة للأعلى',
         menu: 'فتح/إغلاق القائمة',
         langButton: 'English | العربية',
-        readMore: 'اقرأ المزيد'
+        readMore: 'كل المنتجات '
       }
     }
   };
