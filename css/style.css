@@ -178,7 +178,89 @@ body {
     border-color: var(--gold-soft);
     transform: translateY(-3px);
   }
-  
+
+  /* --- RIO Shape Buttons --- */
+  .rio-shape-btn {
+    direction: inherit;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: 3px solid #d5b264;
+    border-radius: 24px 92px 92px 24px;
+    color: var(--white);
+    background: linear-gradient(135deg, #d62c37 0%, #bf1a26 54%, #9a111b 100%);
+    box-shadow: inset 0 2px 6px rgba(255,255,255,.16), 0 8px 18px rgba(0,0,0,.18);
+    transition: transform .22s ease, box-shadow .22s ease;
+  }
+
+  .rio-shape-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 32% 18%, rgba(255,255,255,.22), transparent 34%);
+  }
+
+  .rio-shape-btn > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .rio-shape-btn.btn {
+    color: var(--white);
+    text-shadow: 0 1px 0 rgba(0,0,0,.14);
+    min-height: 72px;
+    padding: 20px 44px;
+    letter-spacing: .04em;
+  }
+
+  .btn.btn-secondary.rio-shape-btn {
+    backdrop-filter: none;
+    border-color: #d2ad58;
+    background: linear-gradient(135deg, #c12631 0%, #a81522 56%, #85101a 100%);
+  }
+
+  .products-read-more .btn.rio-shape-btn {
+    min-width: 210px;
+  }
+
+  /* Add the logo-like angled corner on CTA buttons */
+  .hero-actions .btn.rio-shape-btn,
+  .products-read-more .btn.rio-shape-btn {
+    border-radius: 22px 0 86px 22px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 0%, 97% 42%, 92% 100%, 0% 100%);
+  }
+
+  .lang-btn.rio-shape-btn {
+    min-width: 150px;
+    min-height: 52px;
+    padding: 11px 18px;
+    border-width: 2px;
+    border-radius: 18px 64px 64px 18px;
+    color: #fff !important;
+  }
+
+  .lang-btn.rio-shape-btn:hover {
+    color: #fff;
+  }
+
+  .navbar.scrolled .lang-btn.rio-shape-btn {
+    color: #fff;
+    border-color: #d2ad58;
+    background: linear-gradient(135deg, #c12631 0%, #a81522 56%, #85101a 100%);
+  }
+
+  .btn.rio-shape-btn {
+    min-width: 190px;
+  }
+
+  .rio-shape-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: inset 0 2px 6px rgba(255,255,255,.18), 0 10px 22px rgba(0,0,0,.24);
+  }
+
+
   html[lang="ar"] .nav-links a {
     font-size: 15px;
     font-weight: 700;
@@ -343,7 +425,13 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
   border-color: rgba(127,15,27,.2);
   background: rgba(255,255,255,.85);
 }
-  
+
+.navbar.scrolled .lang-btn.rio-shape-btn {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, #991019 0%, #c91d27 52%, #8f0d16 100%);
+}
+
   .navbar-inner {
     width: var(--container);
     margin: 0 auto;
@@ -801,12 +889,14 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
   }
   
   .stat-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
-    font-weight: 700;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 46px;
+    font-weight: 800;
     color: #7f0f1b;
     line-height: 1;
     margin-bottom: 8px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: .01em;
   }
   
   .stat-label {
