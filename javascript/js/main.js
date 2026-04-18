@@ -20,7 +20,10 @@
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   const langBtn = document.getElementById('langBtn');
+  const statsSection = document.getElementById('stats');
+  const statNumbers = document.querySelectorAll('#stats .stat-number');
   let currentLanguage = document.documentElement.lang === 'en' ? 'en' : 'ar';
+  let statsAnimationStarted = false;
 
   const translations = {
     en: {
@@ -477,6 +480,90 @@
   reveals.forEach(item => observer.observe(item));
 
   // ============================================
+  // Stats Counter Animation
+  // ============================================
+  function animateValue(element, target, options = {}) {
+    const prefix = options.prefix || '';
+    const suffix = options.suffix || '';
+    const initialSuffix = options.initialSuffix !== undefined ? options.initialSuffix : suffix;
+    const duration = options.duration || 2100;
+    const startTime = performance.now();
+    let lastRendered = -1;
+
+    function step(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = progress < 0.55
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+      const currentValue = Math.floor(easedProgress * target);
+      const activeSuffix = progress < 1 ? initialSuffix : suffix;
+      if (currentValue !== lastRendered || progress === 1) {
+        element.textContent = `${prefix}${currentValue}${activeSuffix}`;
+        lastRendered = currentValue;
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        element.textContent = `${prefix}${target}${suffix}`;
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function startStatsCounters() {
+    if (statsAnimationStarted || statNumbers.length < 4) return;
+
+    const counterConfigs = [
+      { target: 9, suffix: '+', duration: 1800 },
+      { target: 15, suffix: '+', duration: 1950 },
+      { target: 50, suffix: 'K+', duration: 2150 },
+      { target: 24, suffix: '/7', initialSuffix: '', duration: 2300 }
+    ];
+
+    statNumbers.forEach((counter, index) => {
+      const config = counterConfigs[index];
+      if (!config) return;
+      counter.textContent = `${config.prefix || ''}0${config.suffix || ''}`;
+      animateValue(counter, config.target, config);
+    });
+
+    statsAnimationStarted = true;
+  }
+
+  function setupStatsCounterAnimation() {
+    if (!statsSection || !statNumbers.length) return;
+
+    if ('IntersectionObserver' in window) {
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startStatsCounters();
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.25 });
+
+      statsObserver.observe(statsSection);
+      return;
+    }
+
+    const onScroll = () => {
+      if (statsAnimationStarted) return;
+      const rect = statsSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        startStatsCounters();
+        window.removeEventListener('scroll', onScroll);
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  }
+
+  // ============================================
   // Smooth Scroll for Anchor Links
   // ============================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -666,6 +753,7 @@
   console.log('%c SIDRA FOOD INDUSTRIES ', 'background: linear-gradient(135deg, #e12634, #c69a3d); color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border-radius: 8px;');
   console.log('%c Made with passion in Libya ', 'color: #c69a3d; font-size: 12px;');
 
+  setupStatsCounterAnimation();
   setLanguage(currentLanguage);
 
 })();
