@@ -41,23 +41,35 @@
       about: {
         kicker: 'About Us',
         title: 'Our Story',
-        intro: 'Sidra Food Industries is a leading Libyan company specialized in high-quality bakery and food products.',
+        intro: 'Sidra Food Industries is a Libyan company specialized in producing baked goods, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
         paragraphs: [
-          'Since its establishment, Sidra Food Industries has focused on delivering carefully packaged bakery and food products that combine high quality, distinctive taste, and the strong visual identity of RIO.',
-          'We believe quality is not just a standard, but a continuous commitment to our customers. That is why we use premium ingredients and modern production methods.'
+          'Sidra Food Industries is a Libyan company specialized in producing baked goods, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
+          'The company operates through its brand "RIO", which represents our commitment to providing products with a distinct taste and consistent quality, to be part of the consumer\'s daily consumption.'
         ],
+        visionTitle: 'Our Vision',
+        visionText: 'To be one of the most prominent companies in the food industry sector in Libya, and to establish the RIO brand as the first choice in terms of quality and trust.',
+        missionTitle: 'Our Mission',
+        missionText: 'To provide high-quality bakery products using the best ingredients and modern manufacturing standards, ensuring a reliable and distinctive daily experience.',
+        valuesTitle: 'Our Values',
+        values: ['Quality', 'Trust', 'Commitment', 'Continuity', 'Development'],
+        whyRioTitle: 'Why RIO?',
         features: [
-          ['Trusted Quality', 'Strict production standards from ingredients to final packaging.'],
-          ['Strong Identity', 'Distinctive visual branding that keeps RIO memorable.'],
-          ['Local Reach', 'Products tailored for the local market with strong distribution.'],
-          ['Continuous Growth', 'Ongoing development in products and production lines.']
-        ]
+          ['Consistent Quality', 'You can rely on'],
+          ['Distinct Taste', 'Suits different palates'],
+          ['Selected Ingredients', 'Carefully chosen'],
+          ['Preserving Packaging', 'Maintains product quality'],
+          ['Daily Consumption', 'Suitable for all times']
+        ],
+        distributionTitle: 'Distribution & Partnerships',
+        distributionText: 'We are working to develop an effective distribution network that ensures our products reach different regions. We also welcome building long-term partnerships with distributors and points of sale, to achieve common and sustainable growth.',
+        cooperationTitle: 'Call for Cooperation',
+        cooperationText: 'We believe that true success is built on partnerships, and we seek to work with partners who share our same standards of quality and ambition.'
       },
       gallery: {
         kicker: 'Gallery',
         title: 'Our Products',
         intro: 'A glimpse of our premium products we proudly offer to our customers.',
-        labels: ['Fresh Bread', 'Croissants', 'Bakery', 'Toast', 'Pastries']
+        labels: ['Fresh Toast', 'Croissants', 'Bakery', 'Toast', 'Pastries']
       },
       products: {
         kicker: 'Our Products',
@@ -66,10 +78,10 @@
         tabs: ['Toast Buckets', 'Cake', 'Croissant Bucket', 'Single Croissant'],
         cards: [
           ['Rio Toast Milk', 'Milk toast — fresh soft slices perfect for any meal.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 59mg', 'Fresh & Tasty'],
-          ['Rio Toast White Bread', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
-          ['Rio Toast White Bread', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['Rio Toast White', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
+          ['Rio Toast White', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
           ['Rio Toast Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 3%', 'Healthy Choice'],
-          ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Bread', 'Natural'],
+          ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Toast', 'Natural'],
           ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain'],
           ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
           ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
@@ -104,11 +116,11 @@
         error: 'Something went wrong. Please try again or contact us directly on WhatsApp.'
       },
       contactInfo: ['Contact Info', 'Connect', 'Phone', 'Location', 'South Ain Zara, Tripoli'],
-      quickLinks: ['WhatsApp', 'Facebook', 'Email', 'Location'],
+      quickLinks: ['WhatsApp', 'Facebook', 'Instagram', 'Email', 'Location'],
       footer: {
         titles: ['Quick Links', 'Products', 'Contact'],
         links1: ['Home', 'About Us', 'Products', 'Contact'],
-        links2: ['Toast & Bread', 'Croissants', 'Family Packs'],
+        links2: ['Toast', 'Croissants', 'Family Packs'],
         brand: 'Sidra Food Industries - A leading Libyan brand in bakery and premium food products.',
         bottom: ['2024 Sidra Food Industries. All rights reserved.', 'Made with passion in Libya']
       },
@@ -133,23 +145,35 @@
       about: {
         kicker: 'من نحن',
         title: 'قصتنا',
-        intro: 'شركة سيدرا للصناعات الغذائية هي شركة ليبية رائدة متخصصة في إنتاج المخبوزات والمنتجات الغذائية عالية الجودة.',
+        intro: 'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في إنتاج المخبوزات، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
         paragraphs: [
-          'منذ تأسيسها، حرصت شركة سيدرا للصناعات الغذائية على تقديم منتجات غذائية ومخبوزات مغلفة بعناية فائقة، وفق أحدث معايير التصنيع العالمية التي تجمع بين الجودة العالية والطعم المميز والهوية البصرية القوية لعلامة RIO.',
-          'نؤمن بأن الجودة ليست مجرد معيار، بل هي التزام مستمر تجاه عملائنا. لذلك نحرص على اختيار أفضل المكونات واتباع أحدث تقنيات الإنتاج لضمان تقديم منتجات تليق بثقة المستهلك الليبي.'
+          'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في إنتاج المخبوزات، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
+          'تعمل الشركة من خلال علامتها التجارية “ريو”، التي تمثل التزامنا بتقديم منتجات بطعم مميز وجودة ثابتة، لتكون جزءًا من الاستهلاك اليومي للمستهلك.'
         ],
+        visionTitle: 'رؤيتنا',
+        visionText: 'أن نكون من أبرز الشركات في قطاع الصناعات الغذائية في ليبيا، وأن نرسخ علامة ريو كخيار أول من حيث الجودة والثقة.',
+        missionTitle: 'رسالتنا',
+        missionText: 'تقديم منتجات مخبوزات بجودة عالية باستخدام أفضل المكونات ومعايير التصنيع الحديثة، بما يضمن تجربة يومية موثوقة ومميزة.',
+        valuesTitle: 'قيمنا',
+        values: ['الجودة', 'الثقة', 'الالتزام', 'الاستمرارية', 'التطوير'],
+        whyRioTitle: 'لماذا ريو؟',
         features: [
-          ['جودة موثوقة', 'معايير إنتاج صارمة من المكونات حتى التغليف النهائي.'],
-          ['هوية قوية', 'تصميم بصري مميز يرسخ اسم RIO في ذهن المستهلك.'],
-          ['انتشار محلي', 'منتجات موجهة للسوق المحلي بوجود قوي ومنظم.'],
-          ['نمو مستمر', 'تطوير دائم للمنتجات وخطوط الإنتاج.']
-        ]
+          ['جودة ثابتة', 'يمكن الاعتماد عليها'],
+          ['طعم مميز', 'يناسب مختلف الأذواق'],
+          ['مكونات مختارة', 'بعناية فائقة'],
+          ['تغليف يحافظ', 'على جودة المنتج'],
+          ['استهلاك يومي', 'مناسبة لكل الأوقات']
+        ],
+        distributionTitle: 'التوزيع والشراكات',
+        distributionText: 'نعمل على تطوير شبكة توزيع فعالة تضمن وصول منتجاتنا إلى مختلف المناطق، كما نرحب ببناء شراكات طويلة المدى مع الموزعين ونقاط البيع، بما يحقق نموًا مشتركًا ومستدامًا.',
+        cooperationTitle: 'دعوة للتعاون',
+        cooperationText: 'نؤمن أن النجاح الحقيقي يُبنى على الشراكات، ونسعى للعمل مع شركاء يشاركوننا نفس معايير الجودة والطموح.'
       },
       gallery: {
         kicker: 'المعرض',
         title: 'منتجاتنا',
         intro: 'لمحة من منتجاتنا المميزة التي نفتخر بتقديمها لعملائنا.',
-        labels: ['خبز طازج', 'كرواسون', 'مخبوزات', 'توست', 'معجنات']
+        labels: ['توست طازج', 'كرواسون', 'مخبوزات', 'توست', 'معجنات']
       },
       products: {
         kicker: 'منتجاتنا',
@@ -158,11 +182,11 @@
         tabs: ['ريو توست عائلي', 'ريو كيك', 'باقة الكرواسون', 'كرواسون مفرد'],
         cards: [
           ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
-          ['ريو توست أبيض', 'خبز توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
-          ['ريو توست أبيض', 'خبز توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['ريو توست أبيض', 'توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
+          ['ريو توست أبيض', 'توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
           ['ريو توست الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%', 'خيار صحي'],
-          ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | خبز شرائح', 'طبيعي'],
-          ['ريو توست متعدد الحبوب', 'خبز توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | خبز توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب'],
+          ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | شرائح توست', 'طبيعي'],
+          ['ريو توست متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب'],
           ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
           ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
           ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
@@ -195,11 +219,11 @@
         error: 'حدث خطأ. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة عبر الواتساب.'
       },
       contactInfo: ['معلومات التواصل', 'تواصل', 'الهاتف', 'الموقع', 'جنوب عين زارة، طرابلس'],
-      quickLinks: ['واتساب', 'فيسبوك', 'بريد إلكتروني', 'الموقع'],
+      quickLinks: ['واتساب', 'فيسبوك', 'إنستجرام', 'بريد إلكتروني', 'الموقع'],
       footer: {
         titles: ['روابط سريعة', 'المنتجات', 'تواصل'],
         links1: ['الرئيسية', 'من نحن', 'المنتجات', 'تواصل'],
-        links2: ['توست وخبز', 'كرواسون', 'عبوات العائلة'],
+        links2: ['توست', 'كرواسون', 'عبوات العائلة'],
         brand: 'شركة سيدرا للصناعات الغذائية - علامة تجارية ليبية رائدة في إنتاج المخبوزات والمنتجات الغذائية عالية الجودة.',
         bottom: ['2024 شركة سيدرا للصناعات الغذائية. جميع الحقوق محفوظة.', 'صنع بشغف في ليبيا']
       },
@@ -258,6 +282,24 @@
     aboutParagraphs.forEach((p, index) => {
       if (t.about.paragraphs[index]) p.textContent = t.about.paragraphs[index];
     });
+
+    setTextIfExists('.vision-title', t.about.visionTitle);
+    setTextIfExists('.vision-text', t.about.visionText);
+    setTextIfExists('.mission-title', t.about.missionTitle);
+    setTextIfExists('.mission-text', t.about.missionText);
+    
+    setTextIfExists('.values-title', t.about.valuesTitle);
+    const valueItems = document.querySelectorAll('.value-item');
+    valueItems.forEach((item, index) => {
+      if (t.about.values[index]) item.textContent = t.about.values[index];
+    });
+
+    setTextIfExists('.why-rio-title', t.about.whyRioTitle);
+    setTextIfExists('.distribution-title', t.about.distributionTitle);
+    setTextIfExists('.distribution-text', t.about.distributionText);
+    setTextIfExists('.cooperation-title', t.about.cooperationTitle);
+    setTextIfExists('.cooperation-text', t.about.cooperationText);
+
     const aboutFeatures = document.querySelectorAll('#about .feature');
     aboutFeatures.forEach((feature, index) => {
       const title = feature.querySelector('h4');
@@ -731,6 +773,19 @@
         }, 5000);
       }
     });
+  }
+
+  // ============================================
+  // Hero Background Slideshow
+  // ============================================
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length > 0) {
+    let currentSlide = 0;
+    setInterval(() => {
+      heroSlides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % heroSlides.length;
+      heroSlides[currentSlide].classList.add('active');
+    }, 3500); // Cross-fade every 3.5 seconds
   }
 
   // ============================================
