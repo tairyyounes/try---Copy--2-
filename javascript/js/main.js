@@ -381,7 +381,7 @@
     setTextIfExists('#contact .contact-card:nth-of-type(2) .en-title', t.contactInfo[1]);
     const contactSpans = document.querySelectorAll('#contact .contact-item span');
     if (contactSpans[0]) contactSpans[0].textContent = t.contactInfo[2];
-    if (contactSpans[1]) contactSpans[1].textContent = lang === 'ar' ? 'الهاتف الثاني' : 'Phone 2';
+    if (contactSpans[1]) contactSpans[1].textContent = t.contactInfo[2];
     if (contactSpans[2]) contactSpans[2].textContent = t.contactInfo[3];
     const locationStrong = document.querySelector('#contact .contact-item:nth-of-type(3) strong');
     if (locationStrong) locationStrong.textContent = t.contactInfo[4];
