@@ -102,16 +102,30 @@
   ============================================= -->
   <section class="hero" id="home">
     <div class="hero-bg" id="heroSlideshow">
-      <img src="images/hero-bg.png" alt="RIO Products Background" class="hero-slide active">
-      <img src="images/hero1-bg.png" alt="RIO Products Background" class="hero-slide">
-      <img src="images/hero2-bg.png" alt="RIO Products Background" class="hero-slide">
-      <img src="images/hero3-bg.png" alt="RIO Products Background" class="hero-slide">
-      <img src="images/her3-bg.png" alt="RIO Products Background" class="hero-slide">
+      <picture class="hero-slide active">
+        <source media="(max-width: 768px)" srcset="images/hero-bg-mobile.png">
+        <img src="images/hero-bg.png" alt="RIO Products Background">
+      </picture>
+      <picture class="hero-slide">
+        <source media="(max-width: 768px)" srcset="images/hero1-bg-mobile.png">
+        <img src="images/hero1-bg.png" alt="RIO Products Background">
+      </picture>
+      <picture class="hero-slide">
+        <source media="(max-width: 768px)" srcset="images/hero2-bg-mobile.png">
+        <img src="images/hero2-bg.png" alt="RIO Products Background">
+      </picture>
+      <picture class="hero-slide">
+        <source media="(max-width: 768px)" srcset="images/hero3-bg-mobile.png">
+        <img src="images/hero3-bg.png" alt="RIO Products Background">
+      </picture>
+      <picture class="hero-slide">
+        <source media="(max-width: 768px)" srcset="images/her3-bg-mobile.png">
+        <img src="images/her3-bg.png" alt="RIO Products Background">
+      </picture>
     </div>
 
     <div class="hero-grid reveal">
       <div class="hero-copy">
-        <span class="eyebrow">Libyan Food Manufacturing</span>
         <p>
           منتجات بطعم الثقة... RIO
         </p>
@@ -673,7 +687,7 @@
                 </svg>
               </div>
               <div>
-                <span>Phone 2</span>
+                <span>Phone</span>
                 <strong>091-2257300</strong>
               </div>
             </a>
