@@ -34,22 +34,23 @@
       heroTitle: 'SIDRA FOOD INDUSTRIES',
       nav: ['Home', 'About', 'Gallery', 'Products', 'FAQ', 'Contact'],
       heroEyebrow: 'Libyan Food Manufacturing',
-      heroText: 'Italian quality by Libyan hands — the quality you trust, the taste that stays with you every day, and a leading brand in bakery and premium food products.',
+      heroText: 'Products with the taste of trust... RIO',
       heroButtons: ['Explore Products', 'Contact Us'],
-      marquee: ['Quality Products', 'Fresh Daily', '100% Natural', 'Made in Libya', 'Trusted Brand'],
+      marquee: ['Quality', 'Trust', 'Commitment', 'Continuity', 'Development'],
       stats: ['Years of Experience', 'Products', 'Happy Customers', 'Production'],
       about: {
         kicker: 'About Us',
-        title: 'Our Story',
-        intro: 'Sidra Food Industries is a Libyan company specialized in producing baked goods, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
+        title: '',
+        intro: 'Sidra Food Industries is a leading Libyan company in food manufacturing, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
         paragraphs: [
-          'Sidra Food Industries is a Libyan company specialized in producing baked goods, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
-          'The company operates through its brand "RIO", which represents our commitment to providing products with a distinct taste and consistent quality, to be part of the consumer\'s daily consumption.'
+          'Sidra Food Industries is a Libyan company specialized in food manufacturing, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
+          'The company operates through its brand "RIO", which represents our commitment to providing products with a distinct taste and consistent quality, to be part of the consumer\'s daily routine.',
+          'RIO products are made using a special high-quality, protein-rich flour developed specifically to match our product specifications. This careful selection of ingredients ensures an ideal balance between softness and nutritional value, and reflects our commitment to delivering products with high standards of quality and distinctive taste.'
         ],
         visionTitle: 'Our Vision',
         visionText: 'To be one of the most prominent companies in the food industry sector in Libya, and to establish the RIO brand as the first choice in terms of quality and trust.',
         missionTitle: 'Our Mission',
-        missionText: 'To provide high-quality bakery products using the best ingredients and modern manufacturing standards, ensuring a reliable and distinctive daily experience.',
+        missionText: 'To provide high-quality food products using selected ingredients and modern manufacturing standards, ensuring a reliable and distinctive daily experience.',
         valuesTitle: 'Our Values',
         values: ['Quality', 'Trust', 'Commitment', 'Continuity', 'Development'],
         whyRioTitle: 'Why RIO?',
@@ -75,33 +76,32 @@
         kicker: 'Our Products',
         title: 'Product Line',
         intro: 'A variety of high-quality products for every Libyan family.',
-        tabs: ['Toast Buckets', 'Cake', 'Croissant Bucket', 'Single Croissant'],
+        tabs: ['Croissant Bucket', 'Single Croissant', 'Cake', 'Toast Buckets'],
         cards: [
+          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
+          ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
+          ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
+          ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
+          ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
           ['Rio Toast Milk', 'Milk toast — fresh soft slices perfect for any meal.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 59mg', 'Fresh & Tasty'],
           ['Rio Toast White', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
           ['Rio Toast White', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
           ['Rio Toast Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 3%', 'Healthy Choice'],
           ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Toast', 'Natural'],
-          ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain'],
-          ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
-          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
-          ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
-          ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
-          ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
-          ['Rio Mini — Croissant Chocolate', 'Mini chocolate croissant — small size with big taste. Perfect as a snack anytime.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Mini Size', 'Mini Chocolate']
+          ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain']
         ]
       },
       faq: {
         title: 'Common Questions',
         q: [
           'Where can we find RIO products?',
-          'Are your products halal and guaranteed?',
+          'Are Sidra products fresh daily?',
           'How can we place wholesale orders?'
         ],
         a: [
           'RIO products are available in most supermarkets and major stores in Tripoli and other Libyan cities.',
-          'Yes, all our products are 100% halal and follow strict food safety standards.',
-          'For wholesale orders, contact us directly by phone or WhatsApp.'
+          'Yes, products are produced and distributed daily to ensure quality.',
+          'For wholesale orders, you can contact us directly by phone or WhatsApp.'
         ]
       },
       contact: {
@@ -121,8 +121,8 @@
         titles: ['Quick Links', 'Products', 'Contact'],
         links1: ['Home', 'About Us', 'Products', 'Contact'],
         links2: ['Toast', 'Croissants', 'Family Packs'],
-        brand: 'Sidra Food Industries - A leading Libyan brand in bakery and premium food products.',
-        bottom: ['2024 Sidra Food Industries. All rights reserved.', 'Made with passion in Libya']
+        brand: 'Sidra Food Industries - A leading Libyan brand in food manufacturing and premium food products.',
+        bottom: ['2024 Sidra Food Industries. All rights reserved.', '']
       },
       misc: {
         backToTop: 'Back to top',
@@ -138,22 +138,23 @@
       },
       nav: ['الرئيسية', 'من نحن', 'المعرض', 'المنتجات', 'الأسئلة', 'تواصل'],
       heroEyebrow: 'الصناعات الغذائية الليبية',
-      heroText: 'جودة إيطالية بأيادي ليبية، الجودة التي تثق بها… والطعم الذي يرافقك كل يوم، وعلامة تجارية رائدة في صناعة المخبوزات والمنتجات الغذائية المميزة.',
+      heroText: 'منتجات بطعم الثقة... RIO',
       heroButtons: ['استكشف المنتجات', 'تواصل معنا'],
-      marquee: ['منتجات عالية الجودة', 'طازج يومياً', 'طبيعي 100%', 'صنع في ليبيا', 'علامة موثوقة'],
+      marquee: ['الجودة', 'الثقة', 'الالتزام', 'الاستمرارية', 'التطوير'],
       stats: ['سنوات الخبرة', 'منتجات', 'عملاء سعداء', 'الإنتاج'],
       about: {
         kicker: 'من نحن',
-        title: 'قصتنا',
-        intro: 'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في إنتاج المخبوزات، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
+        title: '',
+        intro: 'شركة سيدرا للصناعات الغذائية هي شركة ليبية رائدة في الصناعات الغذائية، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
         paragraphs: [
-          'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في إنتاج المخبوزات، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
-          'تعمل الشركة من خلال علامتها التجارية “ريو”، التي تمثل التزامنا بتقديم منتجات بطعم مميز وجودة ثابتة، لتكون جزءًا من الاستهلاك اليومي للمستهلك.'
+          'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في الصناعات الغذائية، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
+          'تعمل الشركة من خلال علامتها التجارية “ريو”، التي تمثل التزامنا بتقديم منتجات بطعم مميز وجودة ثابتة، لتكون جزءًا من الاستهلاك اليومي للمستهلك.',
+          'تُصنَّع منتجات ريو باستخدام دقيق خاص عالي الجودة وغني بالبروتين، تم تطويره خصيصًا ليتناسب مع مواصفات منتجاتنا. هذا الاختيار الدقيق للمكونات يضمن تحقيق توازن مثالي بين الطراوة والقيمة الغذائية، ويعكس التزامنا بتقديم منتجات بمعايير عالية من الجودة والطعم المميز.'
         ],
         visionTitle: 'رؤيتنا',
         visionText: 'أن نكون من أبرز الشركات في قطاع الصناعات الغذائية في ليبيا، وأن نرسخ علامة ريو كخيار أول من حيث الجودة والثقة.',
         missionTitle: 'رسالتنا',
-        missionText: 'تقديم منتجات مخبوزات بجودة عالية باستخدام أفضل المكونات ومعايير التصنيع الحديثة، بما يضمن تجربة يومية موثوقة ومميزة.',
+        missionText: 'تقديم منتجات غذائية عالية الجودة باستخدام مكونات مختارة ومعايير تصنيع حديثة، بما يضمن تجربة يومية موثوقة ومميزة.',
         valuesTitle: 'قيمنا',
         values: ['الجودة', 'الثقة', 'الالتزام', 'الاستمرارية', 'التطوير'],
         whyRioTitle: 'لماذا ريو؟',
@@ -173,37 +174,37 @@
         kicker: 'المعرض',
         title: 'منتجاتنا',
         intro: 'لمحة من منتجاتنا المميزة التي نفتخر بتقديمها لعملائنا.',
-        labels: ['توست طازج', 'كرواسون', 'مخبوزات', 'توست', 'معجنات']
+        labels: ['توست طازج', 'كرواسون', 'منتجات غذائية', 'توست', 'معجنات']
       },
       products: {
         kicker: 'منتجاتنا',
         title: 'خط المنتجات',
         intro: 'مجموعة متنوعة من المنتجات عالية الجودة تلبي احتياجات كل أسرة ليبية.',
-        tabs: ['ريو توست عائلي', 'ريو كيك', 'باقة الكرواسون', 'كرواسون مفرد'],
+        tabs: ['باقة الكرواسون', 'كرواسون مفرد', 'ريو كيك', 'ريو توست عائلي'],
         cards: [
+          ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
+          ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
+          ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
+          ['ريو ميني — كرواسون شوكولاتة', 'ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | ميني', 'ميني شوكولاتة'],
+          ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
           ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
           ['ريو توست أبيض', 'توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
           ['ريو توست أبيض', 'توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
           ['ريو توست الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%', 'خيار صحي'],
           ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | شرائح توست', 'طبيعي'],
-          ['ريو توست متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب'],
-          ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
-          ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
-          ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
-          ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
-          ['ريو ميني — كرواسون شوكولاتة', 'ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | ميني', 'ميني شوكولاتة']
+          ['ريو توست متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب']
         ]
       },
       faq: {
         title: 'الأسئلة الشائعة',
         q: [
-          'وين نقدر نلقى منتجات RIO؟',
-          'هل منتجاتكم حلال ومضمونة؟',
+          'وين نقدر نلقى المنتجات RIO؟',
+          'هل منتجات سيدرا طازجة يومياً؟',
           'كيف نقدر نطلب بالجملة؟'
         ],
         a: [
-          'تتوفر منتجات RIO في أغلب السوبرماركت والمحلات الكبرى في طرابلس وباقي المدن الليبية.',
-          'نعم، جميع منتجاتنا حلال 100% وتخضع لرقابة الجودة والسلامة الغذائية.',
+          'تتوفر المنتجات RIO في أغلب السوبرماركت والمحلات الكبرى في طرابلس وباقي المدن الليبية.',
+          'نعم، يتم إنتاج وتوزيع المنتجات بشكل يومي لضمان الجودة.',
           'للطلب بالجملة، يمكنكم التواصل معنا مباشرة عبر الهاتف أو الواتساب.'
         ]
       },
@@ -224,8 +225,8 @@
         titles: ['روابط سريعة', 'المنتجات', 'تواصل'],
         links1: ['الرئيسية', 'من نحن', 'المنتجات', 'تواصل'],
         links2: ['توست', 'كرواسون', 'عبوات العائلة'],
-        brand: 'شركة سيدرا للصناعات الغذائية - علامة تجارية ليبية رائدة في إنتاج المخبوزات والمنتجات الغذائية عالية الجودة.',
-        bottom: ['2024 شركة سيدرا للصناعات الغذائية. جميع الحقوق محفوظة.', 'صنع بشغف في ليبيا']
+        brand: 'شركة سيدرا للصناعات الغذائية - علامة تجارية ليبية رائدة في الصناعات الغذائية والمنتجات عالية الجودة.',
+        bottom: ['2024 شركة سيدرا للصناعات الغذائية. جميع الحقوق محفوظة.', '']
       },
       misc: {
         backToTop: 'العودة للأعلى',
@@ -380,8 +381,9 @@
     setTextIfExists('#contact .contact-card:nth-of-type(2) .en-title', t.contactInfo[1]);
     const contactSpans = document.querySelectorAll('#contact .contact-item span');
     if (contactSpans[0]) contactSpans[0].textContent = t.contactInfo[2];
-    if (contactSpans[1]) contactSpans[1].textContent = t.contactInfo[3];
-    const locationStrong = document.querySelector('#contact .contact-item:nth-of-type(2) strong');
+    if (contactSpans[1]) contactSpans[1].textContent = lang === 'ar' ? 'الهاتف الثاني' : 'Phone 2';
+    if (contactSpans[2]) contactSpans[2].textContent = t.contactInfo[3];
+    const locationStrong = document.querySelector('#contact .contact-item:nth-of-type(3) strong');
     if (locationStrong) locationStrong.textContent = t.contactInfo[4];
 
     document.querySelectorAll('#contact .quick-link').forEach((link, index) => {
@@ -559,7 +561,7 @@
     if (statsAnimationStarted || statNumbers.length < 4) return;
 
     const counterConfigs = [
-      { target: 9, suffix: '+', duration: 1800 },
+      { target: 3, suffix: '+', duration: 1800 },
       { target: 15, suffix: '+', duration: 1950 },
       { target: 50, suffix: 'K+', duration: 2150 },
       { target: 24, suffix: '/7', initialSuffix: '', duration: 2300 }
@@ -669,7 +671,8 @@
 
       const visibleSlides = getVisibleSlides();
       const maxSlide = Math.max(0, slides.length - visibleSlides);
-      currentSlide = Math.min(currentSlide, maxSlide);
+      if (currentSlide > maxSlide) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = maxSlide;
 
       const slideWidth = slides[0].getBoundingClientRect().width;
       const trackStyles = window.getComputedStyle(productsSwiperTrack);
@@ -679,21 +682,25 @@
         ? `translateX(${offset}px)`
         : `translateX(-${offset}px)`;
 
-      productsPrev.disabled = currentSlide === 0;
-      productsNext.disabled = currentSlide >= maxSlide;
+      productsPrev.disabled = false;
+      productsNext.disabled = false;
     }
 
     productsPrev.addEventListener('click', () => {
-      currentSlide = Math.max(0, currentSlide - 1);
+      currentSlide -= 1;
       updateProductsSwiper();
     });
 
     productsNext.addEventListener('click', () => {
-      const slides = productsSwiperTrack.querySelectorAll('.products-swiper-slide');
-      const maxSlide = Math.max(0, slides.length - getVisibleSlides());
-      currentSlide = Math.min(maxSlide, currentSlide + 1);
+      currentSlide += 1;
       updateProductsSwiper();
     });
+
+    // Auto-move one product at a time so the product line keeps moving by itself.
+    setInterval(() => {
+      currentSlide += 1;
+      updateProductsSwiper();
+    }, 3000);
 
     window.addEventListener('resize', updateProductsSwiper);
     updateProductsSwiper();
@@ -803,10 +810,28 @@
   });
 
   // ============================================
+  // Logo Switcher
+  // ============================================
+  const switchLogos = document.querySelectorAll('.logo-switch .switch-img');
+  if (switchLogos.length > 0) {
+    let currentLogoIndex = 0;
+    setInterval(() => {
+      currentLogoIndex++;
+      document.querySelectorAll('.logo-switch').forEach(switcher => {
+        const imgs = switcher.querySelectorAll('.switch-img');
+        if (imgs.length > 0) {
+          imgs.forEach(img => img.classList.remove('active'));
+          imgs[currentLogoIndex % imgs.length].classList.add('active');
+        }
+      });
+    }, 3000);
+  }
+
+  // ============================================
   // Console Branding
   // ============================================
   console.log('%c SIDRA FOOD INDUSTRIES ', 'background: linear-gradient(135deg, #e12634, #c69a3d); color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border-radius: 8px;');
-  console.log('%c Made with passion in Libya ', 'color: #c69a3d; font-size: 12px;');
+
 
   setupStatsCounterAnimation();
   setLanguage(currentLanguage);
