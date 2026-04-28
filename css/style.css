@@ -457,6 +457,34 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
     animation: floatY 5s ease-in-out infinite;
   }
   
+  /* --- Logo Switcher --- */
+  .logo-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1; /* Match width/height dynamically */
+  }
+
+  .logo-switch.brand-logo {
+    height: 54px; /* keep this for navbar */
+  }
+
+  .logo-switch .switch-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .logo-switch .switch-img.active {
+    opacity: 1;
+  }
+  
   .logo-wrap {
     display: flex;
     flex-direction: column;
@@ -1562,11 +1590,16 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
   }
   
   .form-group label {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--red-2);
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: none;
+    font-weight: 700;
+  }
+
+  html[lang="ar"] .form-group label {
+    letter-spacing: normal;
+    font-size: 14px;
   }
   
   .form-group input,
@@ -2208,3 +2241,73 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
       right: 10px;
     }
   }
+
+/* ===== Final requested refinements ===== */
+.hero-copy p {
+  font-family: 'Noto Kufi Arabic', 'Inter', sans-serif;
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 800;
+  line-height: 1.75;
+  color: #fffdf9;
+  text-shadow: 0 8px 28px rgba(0,0,0,.55);
+}
+
+.marquee-content {
+  animation-duration: 22s;
+  animation-play-state: running !important;
+}
+
+.marquee-section:hover .marquee-content,
+.marquee-content:hover {
+  animation-play-state: running !important;
+}
+
+#products.section {
+  padding-bottom: 140px;
+}
+
+.products-read-more {
+  margin-top: 52px;
+  margin-bottom: 20px;
+}
+
+.products-read-more .btn {
+  min-height: 62px;
+}
+
+.contact-item span,
+.form-group label {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  white-space: nowrap;
+}
+
+html[lang="ar"] .contact-item span,
+html[lang="ar"] .form-group label {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  #products.section {
+    padding-bottom: 120px;
+  }
+  .products-swiper {
+    padding-inline: 0;
+  }
+  .products-swiper-track {
+    grid-auto-columns: 100%;
+  }
+  .products-swiper-slide {
+    min-height: 520px;
+  }
+  .products-read-more {
+    margin-top: 34px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 5;
+  }
+  #faq.section {
+    padding-top: 100px;
+  }
+}
