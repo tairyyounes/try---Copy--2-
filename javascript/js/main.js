@@ -38,6 +38,7 @@
       heroButtons: ['Explore Products', 'Contact Us'],
       marquee: ['Quality', 'Trust', 'Commitment', 'Continuity', 'Development'],
       stats: ['Years of Experience', 'Products', 'Happy Customers', 'Production'],
+      introLine: 'Sidra Food Industries',
       about: {
         kicker: 'About Us',
         title: '',
@@ -149,6 +150,7 @@
       heroButtons: ['استكشف المنتجات', 'تواصل معنا'],
       marquee: ['الجودة', 'الثقة', 'الالتزام', 'الاستمرارية', 'التطوير'],
       stats: ['3+', '15+', '50K+', '24/7'],
+      introLine: 'شركة سيدرا للصناعات الغذائية',
       about: {
         kicker: 'من نحن',
         title: '',
@@ -357,10 +359,16 @@
 
     const cardsData = t.products.cardsData;
     if (cardsData) {
-      Object.keys(cardsData).forEach((className) => {
-        const cards = document.querySelectorAll('.' + className);
-        cards.forEach((card) => {
-          const item = cardsData[className];
+      Object.keys(cardsData).forEach((key) => {
+        // Find elements by class OR ID
+        const elements = [];
+        const byId = document.getElementById(key);
+        if (byId) elements.push(byId);
+        const byClass = document.querySelectorAll('.' + key);
+        byClass.forEach((el) => { if (!elements.includes(el)) elements.push(el); });
+
+        elements.forEach((card) => {
+          const item = cardsData[key];
           const h3 = card.querySelector('h3');
           const p = card.querySelector('p');
           const tag = card.querySelector('.product-tag');
@@ -369,7 +377,17 @@
           if (h3) h3.textContent = item.title;
           if (p) {
             const textNodes = Array.from(p.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
-            if (textNodes.length > 0) textNodes[0].textContent = item.desc;
+            if (textNodes.length > 0) {
+              textNodes[0].textContent = item.desc;
+            } else {
+              // If no text node exists, just update content safely
+              const firstChild = p.firstChild;
+              if (firstChild && firstChild.nodeType === Node.TEXT_NODE) {
+                firstChild.textContent = item.desc;
+              } else {
+                p.prepend(document.createTextNode(item.desc));
+              }
+            }
           }
           if (nutrition) nutrition.textContent = item.info;
           if (tag) tag.textContent = item.tag;
@@ -437,8 +455,19 @@
       });
     }
     const footerBottom = document.querySelectorAll('.footer-bottom div');
-    if (footerBottom[0]) footerBottom[0].textContent = t.footer.bottom[0];
-    if (footerBottom[1]) footerBottom[1].textContent = t.footer.bottom[1];
+    if (footerBottom[0]) {
+      // If it has footer-company class, update company and slogan separately
+      if (footerBottom[0].classList.contains('footer-company')) {
+        setTextIfExists('.footer-company', t.brand.title);
+        setTextIfExists('.footer-slogan', t.heroText);
+        setTextIfExists('.footer-bottom div:nth-child(3) a', currentLanguage === 'ar' ? 'العودة للرئيسية' : 'Back to Home');
+      } else {
+        footerBottom[0].textContent = t.footer.bottom[0];
+        if (footerBottom[1]) footerBottom[1].textContent = t.footer.bottom[1];
+      }
+    }
+
+    setTextIfExists('.intro-line', t.introLine);
 
     if (backToTop) backToTop.setAttribute('aria-label', t.misc.backToTop);
     if (menuBtn) menuBtn.setAttribute('aria-label', t.misc.menu);
