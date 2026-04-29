@@ -73,22 +73,28 @@
         labels: ['Fresh Toast', 'Croissants', 'Bakery', 'Toast', 'Pastries']
       },
       products: {
-        kicker: 'Our Products',
-        title: 'Product Line',
+        kicker: 'Line of Products',
+        title: 'Line of Products',
         intro: 'A variety of high-quality products for every Libyan family.',
-        tabs: ['Croissant Bucket', 'Single Croissant', 'Cake', 'Toast Buckets'],
+        tabs: ['RIO Croissant', 'RIO Family Croissant', 'RIO Cake', 'RIO Toast'],
         cards: [
-          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
-          ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
-          ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
-          ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
-          ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
-          ['Rio Toast Milk', 'Milk toast — fresh soft slices perfect for any meal.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 59mg', 'Fresh & Tasty'],
-          ['Rio Toast White', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
-          ['Rio Toast White', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
-          ['Rio Toast Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 3%', 'Healthy Choice'],
-          ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Toast', 'Natural'],
-          ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain']
+          /* RIO Croissant panel: RIO One, RIO Croissant, RIO Mini */
+          ['RIO One', 'High-quality chocolate filling with a unique Italian taste.', 'kcal 424 | Fat 22.73g | Protein 8.62g', 'Chocolate – 75g'],
+          ['RIO Croissant', 'Premium chocolate with a rich flavor containing 10% hazelnut.', 'kcal 412 | Fat 21.50g | Protein 8.10g', 'Chocolate – 45g'],
+          ['RIO Mini', 'Wonderful chocolate filling in small distinguished pieces. 50 pcs pack.', 'kcal 395 | Fat 19.80g | Protein 7.90g', 'Chocolate – 35g'],
+          /* RIO Family panel: Family, Preserve, Bag */
+          ['Rio Family Croissant — 8 pcs', 'Butter croissant family pack — 8 pieces. Weight per piece: 65g.', '8 pcs | 1-Month Shelf Life | Family Pack', 'Family — 8 pcs'],
+          ['Extra Butter Croissant — Preserve', 'Extra butter croissant in a preserve pack — 8 pieces. Weight: 85–90g.', 'Preserve Pack | Extra Butter | Premium', 'Preserve Pack'],
+          ['Extra Butter Croissant — Bag', 'Extra butter croissant in a practical bag — 8 pieces. Weight: 85–90g.', 'Bag Pack | Extra Butter | Italian Taste', 'Bag Pack'],
+          /* RIO Cake panel */
+          ['Pound Cake Vanilla', 'Fresh Italian vanilla cake. Weight: 150g.', 'Vanilla Flavor | 3-Month Shelf Life | Italian Taste', 'Vanilla 150g'],
+          /* RIO Toast panel: Small, Large, Barley, Oats, Milk, Multi */
+          ['RIO Toast — Small White', 'Regular small white toast — perfect for daily use.', 'Energy: 284 kcal | Fat: 1.69g | Italian Taste', 'Small Size'],
+          ['RIO Toast — Large White (Family)', 'Regular large family-size white toast — soft and fresh.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Family Size'],
+          ['RIO Toast — Barley', 'Barley toast — distinct natural flavor rich in minerals.', 'Energy: 284 kcal | Fat: 1.69g | Natural Fiber', 'Barley'],
+          ['RIO Toast — Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g', 'Oats'],
+          ['RIO Toast — Milk', 'Milk toast — soft fresh slices.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g', 'Milk'],
+          ['RIO Toast — Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Whole Grains | Italian Taste', 'Multi-Grain']
         ]
       },
       faq: {
@@ -122,7 +128,7 @@
         links1: ['Home', 'About Us', 'Products', 'Contact'],
         links2: ['Toast', 'Croissants', 'Family Packs'],
         brand: 'Sidra Food Industries - A leading Libyan brand in food manufacturing and premium food products.',
-        bottom: ['2024 Sidra Food Industries. All rights reserved.', '']
+        bottom: ['Sidra Food Industries – RIO … Products with the taste of trust', '']
       },
       misc: {
         backToTop: 'Back to top',
@@ -180,19 +186,25 @@
         kicker: 'منتجاتنا',
         title: 'خط المنتجات',
         intro: 'مجموعة متنوعة من المنتجات عالية الجودة تلبي احتياجات كل أسرة ليبية.',
-        tabs: ['باقة الكرواسون', 'كرواسون مفرد', 'ريو كيك', 'ريو توست عائلي'],
+        tabs: ['كرواسون ريو', 'كرواسون فاميلي ريو', 'كيك ريو', 'توست ريو'],
         cards: [
-          ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
-          ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
-          ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
-          ['ريو ميني — كرواسون شوكولاتة', 'ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | ميني', 'ميني شوكولاتة'],
-          ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
-          ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
-          ['ريو توست أبيض', 'توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
-          ['ريو توست أبيض', 'توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
-          ['ريو توست الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%', 'خيار صحي'],
-          ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | شرائح توست', 'طبيعي'],
-          ['ريو توست متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب']
+          /* قسم كرواسون ريو: ريو ون، ريو العادي، ريو ميني */
+          ['ريو ون (RIO ONE)', 'حشوة شوكولاتة عالية الجودة ومذاق إيطالي فريد.', 'حجم كبير | صلاحية شهر واحد | Italian Taste', 'ريو ون', '01'],
+          ['ريو 🥇 (RIO)', 'شوكولاتة فاخرة بنكهة غنية تحتوي على 10% بندق.', 'حجم عادي | صلاحية ثلاثة أشهر | Italian Taste', 'شوكولاتة 45 جرام', '02'],
+          ['ريو ميني (RIO Mini)', 'حشوة شوكولاتة رائعة في قطع صغيرة متميزة. عبوة 50 قطعة.', 'وزن القطعة 35-45g | صلاحية شهر واحد', 'ميني 50 قطعة', '03'],
+          /* قسم كرواسون فاميلي: عائلي، حافظة، كيس */
+          ['كرواسون عائلي — Rio Family', 'كرواسون بالزبدة عبوة عائلية تحتوي على 8 قطع. وزن القطعة 65 جرام.', '8 قطع | صلاحية شهر واحد | Family Pack', 'عائلي - 8 قطع', '01'],
+          ['كرواسون إكسترا زبدة — حافظة', 'كرواسون إكسترا زبدة في عبوة حافظة تحتوي على 8 قطع. وزن القطعة 85-90 جرام.', 'عبوة حافظة | Extra Butter | Premium', 'عبوة حافظة', '02'],
+          ['كرواسون إكسترا زبدة — كيس', 'كرواسون إكسترا زبدة في كيس عملي يحتوي على 8 قطع. وزن القطعة 85-90 جرام.', 'كيس | Extra Butter | Italian Taste', 'عبوة كيس', '03'],
+          /* قسم الكيك */
+          ['باوند كيك — Pound Cake Vanilla', 'كيك الفانيليا الإيطالي الطازج. وزن 150 جرام.', 'نكهة الفانيلا | صلاحية 3 أشهر | Italian Taste', 'فانيليا 150 جرام', '01'],
+          /* قسم التوست: صغير، كبير، شعير، شوفان، حليب، متعدد */
+          ['توست ريو — عادي صغير', 'توست عادي بحجم فردي — مثالي للاستخدام اليومي.', 'طاقة: 284 kcal | دهون: 1.69g | Italian Taste', 'حجم صغير', '01'],
+          ['توست ريو — عادي كبير (عائلي)', 'توست عادي بحجم عائلي كبير — ناعم وطازج.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'حجم عائلي', '02'],
+          ['توست ريو بالشعير', 'توست بالشعير — نكهة طبيعية مميزة وغنية بالمعادن.', 'طاقة: 284 kcal | دهون: 1.69g | ألياف طبيعية', 'شعير', '03'],
+          ['توست ريو الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g', 'شوفان', '04'],
+          ['توست ريو بالحليب', 'توست بالحليب — شرائح طازجة ناعمة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g', 'حليب', '05'],
+          ['توست ريو متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | حبوب كاملة | Italian Taste', 'متعدد الحبوب', '06']
         ]
       },
       faq: {
@@ -226,7 +238,7 @@
         links1: ['الرئيسية', 'من نحن', 'المنتجات', 'تواصل'],
         links2: ['توست', 'كرواسون', 'عبوات العائلة'],
         brand: 'شركة سيدرا للصناعات الغذائية - علامة تجارية ليبية رائدة في الصناعات الغذائية والمنتجات عالية الجودة.',
-        bottom: ['2024 شركة سيدرا للصناعات الغذائية. جميع الحقوق محفوظة.', '']
+        bottom: ['شركة سيدرا للصناعات الغذائية – RIO … منتجات بطعم الثقة', '']
       },
       misc: {
         backToTop: 'العودة للأعلى',
@@ -288,7 +300,7 @@
     setTextIfExists('.vision-text', t.about.visionText);
     setTextIfExists('.mission-title', t.about.missionTitle);
     setTextIfExists('.mission-text', t.about.missionText);
-    
+
     setTextIfExists('.values-title', t.about.valuesTitle);
     const valueItems = document.querySelectorAll('.value-item');
     valueItems.forEach((item, index) => {
