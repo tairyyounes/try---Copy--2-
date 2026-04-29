@@ -43,6 +43,7 @@
         title: '',
         intro: 'Sidra Food Industries is a leading Libyan company in food manufacturing, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
         paragraphs: [
+          'Sidra Food Industries is a Libyan company specialized in food manufacturing, offering high-quality products that meet the needs of the local market and keep pace with its developments.',
           'The company operates through its brand "RIO", which represents our commitment to providing products with a distinct taste and consistent quality, to be part of the consumer\'s daily routine.',
           'RIO products are made using a special high-quality, protein-rich flour developed specifically to match our product specifications. This careful selection of ingredients ensures an ideal balance between softness and nutritional value, and reflects our commitment to delivering products with high standards of quality and distinctive taste.'
         ],
@@ -69,34 +70,26 @@
         kicker: 'Gallery',
         title: 'Our Products',
         intro: 'A glimpse of our premium products we proudly offer to our customers.',
-        slides: [
-          { title: 'RIO One', desc: 'High-quality chocolate filling with a unique Italian taste.', tag: 'RIO ONE' },
-          { title: 'RIO 🥇 (RIO)', desc: 'Premium chocolate with a rich flavor containing 10% hazelnut.', tag: 'Chocolate' },
-          { title: 'RIO Mini (RIO Mini)', desc: 'Wonderful chocolate filling in small distinguished pieces.', tag: 'Mini' },
-          { title: 'Fresh Toast', desc: 'Our premium bread products, fresh daily.', tag: 'Toast' },
-          { title: 'Family Packs', desc: 'Convenient sizes for the whole family.', tag: 'Family' }
-        ]
+        labels: ['Fresh Toast', 'Croissants', 'Bakery', 'Toast', 'Pastries']
       },
       products: {
-        kicker: 'Line of Products',
-        title: 'Line of Products',
+        kicker: 'Our Products',
+        title: 'Product Line',
         intro: 'A variety of high-quality products for every Libyan family.',
-        tabs: ['RIO Croissant', 'RIO Family Croissant', 'RIO Cake', 'RIO Toast'],
-        cardsData: {
-          'card-rio-one': { title: 'RIO ONE', desc: 'High-quality chocolate filling with a unique Italian taste.', info: 'Large Size | 1 Month Validity | Italian Taste', tag: 'RIO ONE' },
-          'card-rio-regular': { title: 'RIO 🥇 (RIO)', desc: 'Premium chocolate with a rich flavor containing 10% hazelnut.', info: 'Regular Size | 3 Months Validity | Italian Taste', tag: 'Chocolate' },
-          'card-rio-mini': { title: 'RIO Mini', desc: 'Wonderful chocolate filling in small distinguished pieces.', info: 'Weight 35-45g | 1 Month Validity', tag: 'Mini' },
-          'card-family-8': { title: 'RIO Family Croissant', desc: 'Butter croissant family pack containing 8 pieces. Weight 65g.', info: '8 Pieces | 1 Month Validity | Family Pack', tag: 'Family - 8 Pcs' },
-          'card-extra-preserve': { title: 'Extra Butter — Preserve', desc: 'Extra butter croissant in a preservative container with 8 pieces. Weight 85-90g.', info: 'Preserve Pack | Extra Butter | Premium', tag: 'Preserve' },
-          'card-extra-bag': { title: 'Extra Butter — Bag', desc: 'Extra butter croissant in a practical bag with 8 pieces. Weight 85-90g.', info: 'Bag | Extra Butter | Italian Taste', tag: 'Bag' },
-          'card-cake-vanilla': { title: 'Pound Cake — Vanilla', desc: 'Fresh Italian vanilla cake. Weight 150g.', info: 'Vanilla Flavor | 3 Months Validity | Italian Taste', tag: 'Vanilla 150g' },
-          'card-toast-small': { title: 'RIO Toast — Small White', desc: 'Regular toast in individual size — perfect for daily use.', info: '284 kcal | 1.69g Fat | Italian Taste', tag: 'Small' },
-          'card-toast-large': { title: 'RIO Toast — Large White (Family)', desc: 'Regular toast in large family size — soft and fresh.', info: '284 kcal | 1.69g Fat | 0.29g Saturated Fat', tag: 'Family Size' },
-          'card-toast-barley': { title: 'RIO Barley Toast', desc: 'Barley toast — distinctive natural flavor rich in minerals.', info: '284 kcal | 1.69g Fat | Natural Fiber', tag: 'Barley' },
-          'card-toast-oats': { title: 'RIO Oats Toast', desc: 'Oats toast — rich in fiber for longer satiety.', info: '284 kcal | 1.69g Fat | 5g Sugar', tag: 'Oats' },
-          'card-toast-milk': { title: 'RIO Milk Toast', desc: 'Milk toast — soft fresh slices.', info: '284 kcal | 1.69g Fat | 5g Sugar', tag: 'Milk' },
-          'card-toast-multi': { title: 'RIO Multi-Grain Toast', desc: 'Multi-grain toast — a rich blend of whole grains for better health.', info: '284 kcal | Whole Grains | Italian Taste', tag: 'Multi-Grain' }
-        }
+        tabs: ['Croissant Bucket', 'Single Croissant', 'Cake', 'Toast Buckets'],
+        cards: [
+          ['Rio Family — Croissant Butter Bucket', 'Butter croissant — 8 pieces in an elegant clear box. Italian Taste with a touch of natural butter.', '8 pcs | Italian Taste | Sidra | Butter Croissant', 'Family Pack — 8 pcs'],
+          ['Rio Family — Croissant Bucket', 'Family pack butter croissant — 8 pieces in a clear tray. Crispy in every bite.', '8 pcs | Butter Croissant | Italian Taste', 'Family Pack — 8 pcs'],
+          ['Rio ONE — Croissant Chocolate', 'Large size chocolate croissant — crispy golden dough filled with Italian chocolate cream.', 'Energy: 424 kcal | Fat: 22.73g | Protein: 8.62g | Italian Taste', 'Chocolate'],
+          ['Rio — Croissant Chocolate 45g', 'Single 45g chocolate croissant — filled with delicious dark chocolate cream.', '45g | Chocolate Croissant | Rio Sidra | No.1 Choice', 'Chocolate 45g'],
+          ['Rio Cake — Pound Cake Vanilla', 'Italian Vanilla Cake — unparalleled softness with carefully baked golden dough.', 'Energy: 337 kcal | Fat: 11.5g | Protein: 2g | Italian Taste', 'Italian Taste'],
+          ['Rio Toast Milk', 'Milk toast — fresh soft slices perfect for any meal.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 59mg', 'Fresh & Tasty'],
+          ['Rio Toast White', 'Regular white toast — soft white perfect for all meals.', 'Energy: 284 kcal | Fat: 1.69g | Sat Fat: 0.29g', 'Best Seller'],
+          ['Rio Toast White', 'Regular white toast with distinct packaging — Italian Taste with an authentic Libyan touch.', 'Energy: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['Rio Toast Oats', 'Oat toast — rich in fiber to keep you full longer.', 'Energy: 284 kcal | Fat: 1.69g | Sugar: 5g | Sodium: 3%', 'Healthy Choice'],
+          ['Rio Toast Barley', 'Barley toast — distinct natural flavor rich in essential minerals.', 'Energy: 284 kcal | Fat: 1.69g | Sliced Toast', 'Natural'],
+          ['Rio Toast Multi-Grain', 'Multi-grain toast — rich blend of whole grains for better health.', 'Energy: 284 kcal | Multi-Grain Toast | Italian Taste', 'Multi-Grain']
+        ]
       },
       faq: {
         title: 'Common Questions',
@@ -129,7 +122,7 @@
         links1: ['Home', 'About Us', 'Products', 'Contact'],
         links2: ['Toast', 'Croissants', 'Family Packs'],
         brand: 'Sidra Food Industries - A leading Libyan brand in food manufacturing and premium food products.',
-        bottom: ['Sidra Food Industries – RIO … Products with the taste of trust', '']
+        bottom: ['2024 Sidra Food Industries. All rights reserved.', '']
       },
       misc: {
         backToTop: 'Back to top',
@@ -148,12 +141,13 @@
       heroText: 'منتجات بطعم الثقة... RIO',
       heroButtons: ['استكشف المنتجات', 'تواصل معنا'],
       marquee: ['الجودة', 'الثقة', 'الالتزام', 'الاستمرارية', 'التطوير'],
-      stats: ['3+', '15+', '50K+', '24/7'],
+      stats: ['سنوات الخبرة', 'منتجات', 'عملاء سعداء', 'الإنتاج'],
       about: {
         kicker: 'من نحن',
         title: '',
         intro: 'شركة سيدرا للصناعات الغذائية هي شركة ليبية رائدة في الصناعات الغذائية، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
         paragraphs: [
+          'شركة سيدرا للصناعات الغذائية هي شركة ليبية متخصصة في الصناعات الغذائية، تقدم منتجات عالية الجودة تلبي احتياجات السوق المحلي وتواكب تطوراته.',
           'تعمل الشركة من خلال علامتها التجارية “ريو”، التي تمثل التزامنا بتقديم منتجات بطعم مميز وجودة ثابتة، لتكون جزءًا من الاستهلاك اليومي للمستهلك.',
           'تُصنَّع منتجات ريو باستخدام دقيق خاص عالي الجودة وغني بالبروتين، تم تطويره خصيصًا ليتناسب مع مواصفات منتجاتنا. هذا الاختيار الدقيق للمكونات يضمن تحقيق توازن مثالي بين الطراوة والقيمة الغذائية، ويعكس التزامنا بتقديم منتجات بمعايير عالية من الجودة والطعم المميز.'
         ],
@@ -180,34 +174,26 @@
         kicker: 'المعرض',
         title: 'منتجاتنا',
         intro: 'لمحة من منتجاتنا المميزة التي نفتخر بتقديمها لعملائنا.',
-        slides: [
-          { title: 'ريو ون (RIO ONE)', desc: 'حشوة شوكولاتة عالية الجودة ومذاق إيطالي فريد.', tag: 'ريو ون' },
-          { title: 'ريو 🥇 (RIO)', desc: 'شوكولاتة فاخرة بنكهة غنية تحتوي على 10% بندق.', tag: 'شوكولاتة' },
-          { title: 'ريو ميني (RIO Mini)', desc: 'حشوة شوكولاتة رائعة في قطع صغيرة متميزة.', tag: 'ميني' },
-          { title: 'توست طازج', desc: 'منتجات الخبز الفاخرة، طازجة يومياً.', tag: 'توست' },
-          { title: 'عبوات عائلية', desc: 'أحجام مناسبة تلبي احتياجات كل الأسرة.', tag: 'عائلي' }
-        ]
+        labels: ['توست طازج', 'كرواسون', 'منتجات غذائية', 'توست', 'معجنات']
       },
       products: {
         kicker: 'منتجاتنا',
         title: 'خط المنتجات',
         intro: 'مجموعة متنوعة من المنتجات عالية الجودة تلبي احتياجات كل أسرة ليبية.',
-        tabs: ['كرواسون ريو', 'كرواسون فاميلي ريو', 'كيك ريو', 'توست ريو'],
-        cardsData: {
-          'card-rio-one': { title: 'ريو ون (RIO ONE)', desc: 'حشوة شوكولاتة عالية الجودة ومذاق إيطالي فريد.', info: 'حجم كبير | صلاحية شهر واحد | Italian Taste', tag: 'ريو ون' },
-          'card-rio-regular': { title: 'ريو 🥇 (RIO)', desc: 'شوكولاتة فاخرة بنكهة غنية تحتوي على 10% بندق.', info: 'حجم عادي | صلاحية ثلاثة أشهر | Italian Taste', tag: 'شوكولاتة' },
-          'card-rio-mini': { title: 'ريو ميني (RIO Mini)', desc: 'حشوة شوكولاتة رائعة في قطع صغيرة متميزة.', info: 'وزن القطعة 35-45g | صلاحية شهر واحد', tag: 'ميني' },
-          'card-family-8': { title: 'كرواسون عائلي — Rio Family', desc: 'كرواسون بالزبدة عبوة عائلية تحتوي على 8 قطع. وزن القطعة 65 جرام.', info: '8 قطع | صلاحية شهر واحد | Family Pack', tag: 'عائلي - 8 قطع' },
-          'card-extra-preserve': { title: 'كرواسون إكسترا زبدة — حافظة', desc: 'كرواسون إكسترا زبدة في عبوة حافظة تحتوي على 8 قطع. وزن القطعة 85-90 جرام.', info: 'عبوة حافظة | Extra Butter | Premium', tag: 'عبوة حافظة' },
-          'card-extra-bag': { title: 'كرواسون إكسترا زبدة — كيس', desc: 'كرواسون إكسترا زبدة في كيس عملي يحتوي على 8 قطع. وزن القطعة 85-90 جرام.', info: 'كيس | Extra Butter | Italian Taste', tag: 'عبوة كيس' },
-          'card-cake-vanilla': { title: 'باوند كيك — Pound Cake Vanilla', desc: 'كيك الفانيليا الإيطالي الطازج. وزن 150 جرام.', info: 'نكهة الفانيلا | صلاحية 3 أشهر | Italian Taste', tag: 'فانيليا 150 جرام' },
-          'card-toast-small': { title: 'توست ريو — عادي صغير', desc: 'توست عادي بحجم فردي — مثالي للاستخدام اليومي.', info: 'طاقة: 284 kcal | دهون: 1.69g | Italian Taste', tag: 'حجم صغير' },
-          'card-toast-large': { title: 'توست ريو — عادي كبير (عائلي)', desc: 'توست عادي بحجم عائلي كبير — ناعم وطازج.', info: 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', tag: 'حجم عائلي' },
-          'card-toast-barley': { title: 'توست ريو بالشعير', desc: 'توست بالشعير — نكهة طبيعية مميزة وغنية بالمعادن.', info: 'طاقة: 284 kcal | دهون: 1.69g | ألياف طبيعية', tag: 'شعير' },
-          'card-toast-oats': { title: 'توست ريو الشوفان', desc: 'توست الشوفان — غني بالألياف للشعور بالشبع.', info: 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g', tag: 'شوفان' },
-          'card-toast-milk': { title: 'توست ريو بالحليب', desc: 'توست بالحليب — شرائح طازجة ناعمة.', info: 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g', tag: 'حليب' },
-          'card-toast-multi': { title: 'توست ريو متعدد الحبوب', desc: 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', info: 'طاقة: 284 kcal | حبوب كاملة | Italian Taste', tag: 'متعدد الحبوب' }
-        }
+        tabs: ['باقة الكرواسون', 'كرواسون مفرد', 'ريو كيك', 'ريو توست عائلي'],
+        cards: [
+          ['ريو العائلة — باقة الكرواسون', 'كرواسون بالزبدة عبوة العائلة — 8 قطع في صينية شفافة. هش ومقرمش في كل قضمة.', '8 قطع | كرواسون بالزبدة | Italian Taste', 'حجم عائلي — 8 قطع'],
+          ['ريو وان — كرواسون شوكولاتة', 'كرواسون شوكولاتة بحجم كبير — عجينة ذهبية هشة محشوة بكريمة الشوكولاتة الإيطالية.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | Italian Taste', 'شوكولاتة'],
+          ['ريو — كرواسون شوكولاتة 45 جرام', 'كرواسون شوكولاتة فردي 45 جرام — قلب محشو بكريمة شوكولاتة داكنة لذيذة.', '45g | كرواسون شوكولاتة | Rio Sidra | الخيار الأول', 'شوكولاتة 45g'],
+          ['ريو ميني — كرواسون شوكولاتة', 'ميني كرواسون شوكولاتة — حجم صغير بطعم كبير. مثالي كوجبة خفيفة في أي وقت.', 'طاقة: 424 kcal | دهون: 22.73g | بروتين: 8.62g | ميني', 'ميني شوكولاتة'],
+          ['ريو كيك — باوند كيك فانيليا', 'كيك الفانيليا الإيطالي — نعومة لا مثيل لها بعجينة ذهبية مخبوزة بعناية.', 'طاقة: 337 kcal | دهون: 11.5g | بروتين: 2g | Italian Taste', 'Italian Taste'],
+          ['ريو توست بالحليب', 'توست بالحليب — شرائح طازجة ناعمة مثالية لكل وجبة.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 59mg', 'طازج ولذيذ'],
+          ['ريو توست أبيض', 'توست عادي — أبيض ناعم مثالي لكل الوجبات.', 'طاقة: 284 kcal | دهون: 1.69g | دهون مشبعة: 0.29g', 'الأكثر مبيعاً'],
+          ['ريو توست أبيض', 'توست عادي بتغليف مميز — Italian Taste بلمسة ليبية أصيلة.', 'طاقة: 284 kcal | Italian Taste | Sidra', 'Italian Taste'],
+          ['ريو توست الشوفان', 'توست الشوفان — غني بالألياف للشعور بالشبع لفترة أطول.', 'طاقة: 284 kcal | دهون: 1.69g | سكر: 5g | صوديوم: 3%', 'خيار صحي'],
+          ['ريو توست الشعير', 'توست الشعير — نكهة طبيعية مميزة وغنية بالمعادن الضرورية.', 'طاقة: 284 kcal | دهون: 1.69g | شرائح توست', 'طبيعي'],
+          ['ريو توست متعدد الحبوب', 'توست متعدد الحبوب — مزيج غني من الحبوب الكاملة لصحة أفضل.', 'طاقة: 284 kcal | توست متعدد الحبوب | Italian Taste', 'متعدد الحبوب']
+        ]
       },
       faq: {
         title: 'الأسئلة الشائعة',
@@ -240,7 +226,7 @@
         links1: ['الرئيسية', 'من نحن', 'المنتجات', 'تواصل'],
         links2: ['توست', 'كرواسون', 'عبوات العائلة'],
         brand: 'شركة سيدرا للصناعات الغذائية - علامة تجارية ليبية رائدة في الصناعات الغذائية والمنتجات عالية الجودة.',
-        bottom: ['شركة سيدرا للصناعات الغذائية – RIO … منتجات بطعم الثقة', '']
+        bottom: ['2024 شركة سيدرا للصناعات الغذائية. جميع الحقوق محفوظة.', '']
       },
       misc: {
         backToTop: 'العودة للأعلى',
@@ -302,7 +288,7 @@
     setTextIfExists('.vision-text', t.about.visionText);
     setTextIfExists('.mission-title', t.about.missionTitle);
     setTextIfExists('.mission-text', t.about.missionText);
-
+    
     setTextIfExists('.values-title', t.about.valuesTitle);
     const valueItems = document.querySelectorAll('.value-item');
     valueItems.forEach((item, index) => {
@@ -326,21 +312,8 @@
     setTextIfExists('#gallery .section-kicker', t.gallery.kicker);
     setTextIfExists('#gallery .section-head .en-title', t.gallery.title);
     setTextIfExists('#gallery .section-intro', t.gallery.intro);
-    document.querySelectorAll('#gallery .gallery-item').forEach((item, index) => {
-      if (t.gallery.slides && t.gallery.slides[index]) {
-        const slide = t.gallery.slides[index];
-        // تحديث التسمية إذا كانت موجودة (gallery-label)
-        const label = item.querySelector('.gallery-label');
-        if (label) label.textContent = slide.title;
-
-        // إذا كان هناك سلايدر (Slider) في المستقبل، الكود جاهز لتحديثه هنا
-        const slideTitle = item.querySelector('h3');
-        const slideDesc = item.querySelector('p');
-        const slideTag = item.querySelector('.slide-tag');
-        if (slideTitle) slideTitle.textContent = slide.title;
-        if (slideDesc) slideDesc.textContent = slide.desc;
-        if (slideTag) slideTag.textContent = slide.tag;
-      }
+    document.querySelectorAll('#gallery .gallery-label').forEach((item, index) => {
+      if (t.gallery.labels[index]) item.textContent = t.gallery.labels[index];
     });
 
     setTextIfExists('#products .section-kicker', t.products.kicker);
@@ -355,27 +328,25 @@
       }
     });
 
-    const cardsData = t.products.cardsData;
-    if (cardsData) {
-      Object.keys(cardsData).forEach((className) => {
-        const cards = document.querySelectorAll('.' + className);
-        cards.forEach((card) => {
-          const item = cardsData[className];
-          const h3 = card.querySelector('h3');
-          const p = card.querySelector('p');
-          const tag = card.querySelector('.product-tag');
-          const nutrition = card.querySelector('.product-nutrition');
+    const productCards = document.querySelectorAll('#products .product-card');
+    productCards.forEach((card, index) => {
+      const h3 = card.querySelector('h3');
+      const p = card.querySelector('p');
+      const tag = card.querySelector('.product-tag');
+      const nutrition = card.querySelector('.product-nutrition');
 
-          if (h3) h3.textContent = item.title;
-          if (p) {
-            const textNodes = Array.from(p.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
-            if (textNodes.length > 0) textNodes[0].textContent = item.desc;
-          }
-          if (nutrition) nutrition.textContent = item.info;
-          if (tag) tag.textContent = item.tag;
-        });
-      });
-    }
+      if (h3 && t.products.cards[index]) h3.textContent = t.products.cards[index][0];
+
+      if (p && t.products.cards[index]) {
+        const textNodes = Array.from(p.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+        if (textNodes.length > 0) {
+          textNodes[0].textContent = t.products.cards[index][1];
+        }
+      }
+
+      if (nutrition && t.products.cards[index]) nutrition.textContent = t.products.cards[index][2];
+      if (tag && t.products.cards[index]) tag.textContent = t.products.cards[index][3];
+    });
 
     setTextIfExists('#faq .section-head .en-title', t.faq.title);
     const faqQuestions = document.querySelectorAll('#faq .faq-question span');
@@ -410,7 +381,7 @@
     setTextIfExists('#contact .contact-card:nth-of-type(2) .en-title', t.contactInfo[1]);
     const contactSpans = document.querySelectorAll('#contact .contact-item span');
     if (contactSpans[0]) contactSpans[0].textContent = t.contactInfo[2];
-    if (contactSpans[1]) contactSpans[1].textContent = t.contactInfo[2];
+    if (contactSpans[1]) contactSpans[1].textContent = lang === 'ar' ? 'الهاتف الثاني' : 'Phone 2';
     if (contactSpans[2]) contactSpans[2].textContent = t.contactInfo[3];
     const locationStrong = document.querySelector('#contact .contact-item:nth-of-type(3) strong');
     if (locationStrong) locationStrong.textContent = t.contactInfo[4];
