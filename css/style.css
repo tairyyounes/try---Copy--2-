@@ -847,7 +847,8 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
 }
 
 .hero-bg .hero-slide.active {
-  opacity: 0.6;
+  opacity: 1;
+  /* Make image fully bright */
 }
 
 .hero-bg::after {
@@ -855,8 +856,8 @@ html[lang="ar"] .hero-copy h1.hero-company-title {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(15, 5, 5, .4) 0%, rgba(15, 5, 5, .2) 30%, rgba(10, 5, 5, .85) 100%),
-    linear-gradient(90deg, rgba(120, 15, 20, .3) 0%, transparent 60%);
+    linear-gradient(180deg, rgba(15, 5, 5, 0) 0%, rgba(15, 5, 5, 0) 40%, rgba(10, 5, 5, .75) 100%),
+    linear-gradient(90deg, rgba(120, 15, 20, .1) 0%, transparent 40%);
 }
 
 .hero-grid {
@@ -1457,27 +1458,14 @@ html[lang="ar"] .gallery-label {
   position: relative;
   overflow: hidden;
   box-shadow: 0 15px 50px rgba(0, 0, 0, .06);
-}
-
-.product-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--red-2), var(--gold), var(--red-2));
-  transform: scaleX(0);
-  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
 }
 
 .product-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 30px 70px rgba(0, 0, 0, .12);
-}
-
-.product-card:hover::before {
-  transform: scaleX(1);
 }
 
 .product-image {
@@ -1506,11 +1494,15 @@ html[lang="ar"] .gallery-label {
 
 .product-index {
   color: var(--gold-soft);
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: normal;
   text-transform: none;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 700;
+  background: rgba(189, 162, 126, 0.1);
+  padding: 4px 12px;
+  border-radius: 6px;
+  width: fit-content;
 }
 
 .product-card h3 {
@@ -1539,16 +1531,17 @@ html[lang="ar"] .gallery-label {
 
 .product-tag {
   display: inline-block;
-  padding: 6px 15px;
+  padding: 8px 18px;
   background: linear-gradient(135deg, rgba(225, 38, 52, .09), rgba(198, 154, 61, .07));
   border: 1px solid rgba(225, 38, 52, .12);
   border-radius: 40px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--red-2);
-  margin-top: 18px;
+  margin-top: auto;
   font-weight: 700;
   letter-spacing: .06em;
   text-transform: uppercase;
+  width: fit-content;
 }
 
 .products-swiper {
@@ -2095,6 +2088,15 @@ html[lang="ar"] .form-group label {
   font-size: 13px;
 }
 
+.footer-slogan {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255, 248, 242, 0.85);
+  text-align: center;
+  font-family: var(--font-ar), var(--font-en), sans-serif;
+}
+
 /* --- Back to Top Button --- */
 .back-to-top {
   position: fixed;
@@ -2568,6 +2570,6 @@ html[lang="ar"] .form-group label {
 @media (max-width: 768px) {
   .hero-bg::after {
     /* Ensure a smooth fade from the contained image down to the text area */
-    background: linear-gradient(180deg, rgba(26, 22, 21, 0) 0%, rgba(26, 22, 21, 0.85) 45%, rgba(26, 22, 21, 1) 100%);
+    background: linear-gradient(180deg, rgba(26, 22, 21, 0) 0%, rgba(26, 22, 21, 0.2) 50%, rgba(26, 22, 21, 0.85) 100%);
   }
 }
