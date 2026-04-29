@@ -81,7 +81,7 @@
         kicker: 'Line of Products',
         title: 'Line of Products',
         intro: 'A variety of high-quality products for every Libyan family.',
-        tabs: ['RIO Croissant', 'RIO Family Croissant', 'RIO Cake', 'RIO Toast'],
+        tabs: ['RIO Croissant', 'RIO Family', 'RIO Cake', 'RIO Toast'],
         cardsData: {
           'card-rio-one': { title: 'RIO ONE', desc: 'High-quality chocolate filling with a unique Italian taste.', info: 'Large Size | 1 Month Validity | Italian Taste', tag: 'RIO ONE' },
           'card-rio-regular': { title: 'RIO 🥇 (RIO)', desc: 'Premium chocolate with a rich flavor containing 10% hazelnut.', info: 'Regular Size | 3 Months Validity | Italian Taste', tag: 'Chocolate' },
